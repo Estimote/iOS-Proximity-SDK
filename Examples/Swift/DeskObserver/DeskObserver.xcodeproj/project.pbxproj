@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172225AA1FFE757F00822958 /* EstimoteBluetoothScanning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172225A81FFE756F00822958 /* EstimoteBluetoothScanning.framework */; };
+		172225AB1FFE757F00822958 /* EstimoteBluetoothScanning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 172225A81FFE756F00822958 /* EstimoteBluetoothScanning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		172225AE1FFE76D600822958 /* EstimoteProximitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172225AC1FFE76C600822958 /* EstimoteProximitySDK.framework */; };
+		172225AF1FFE76D600822958 /* EstimoteProximitySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 172225AC1FFE76C600822958 /* EstimoteProximitySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		17233B5A1F6976320040C5DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17233B591F6976320040C5DC /* AppDelegate.swift */; };
 		17233B5C1F6976320040C5DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17233B5B1F6976320040C5DC /* ViewController.swift */; };
 		17233B5F1F6976320040C5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17233B5D1F6976320040C5DC /* Main.storyboard */; };
 		17233B611F6976320040C5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17233B601F6976320040C5DC /* Assets.xcassets */; };
 		17233B641F6976320040C5DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17233B621F6976320040C5DC /* LaunchScreen.storyboard */; };
-		1761CFD71FE959B70092C093 /* EstimoteProximitySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1761CFD61FE959B70092C093 /* EstimoteProximitySDK.framework */; };
-		1761CFD81FE959B70092C093 /* EstimoteProximitySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1761CFD61FE959B70092C093 /* EstimoteProximitySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +25,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1761CFD81FE959B70092C093 /* EstimoteProximitySDK.framework in Embed Frameworks */,
+				172225AB1FFE757F00822958 /* EstimoteBluetoothScanning.framework in Embed Frameworks */,
+				172225AF1FFE76D600822958 /* EstimoteProximitySDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		172225A81FFE756F00822958 /* EstimoteBluetoothScanning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteBluetoothScanning.framework; sourceTree = "<group>"; };
+		172225AC1FFE76C600822958 /* EstimoteProximitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteProximitySDK.framework; path = ../../../../EstimoteProximitySDK/EstimoteProximitySDK.framework; sourceTree = "<group>"; };
 		17233B561F6976320040C5DC /* DeskObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeskObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17233B591F6976320040C5DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17233B5B1F6976320040C5DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +43,6 @@
 		17233B601F6976320040C5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17233B631F6976320040C5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17233B651F6976320040C5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1761CFD61FE959B70092C093 /* EstimoteProximitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteProximitySDK.framework; path = ../../../EstimoteProximitySDK/EstimoteProximitySDK.framework; sourceTree = "<group>"; };
 		176DCD091FE9310400811CF3 /* DeskObserver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeskObserver-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,19 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1761CFD71FE959B70092C093 /* EstimoteProximitySDK.framework in Frameworks */,
+				172225AA1FFE757F00822958 /* EstimoteBluetoothScanning.framework in Frameworks */,
+				172225AE1FFE76D600822958 /* EstimoteProximitySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172225A71FFE756F00822958 /* Estimote */ = {
+			isa = PBXGroup;
+			children = (
+				172225AC1FFE76C600822958 /* EstimoteProximitySDK.framework */,
+				172225A81FFE756F00822958 /* EstimoteBluetoothScanning.framework */,
+			);
+			path = Estimote;
+			sourceTree = "<group>";
+		};
 		17233B4D1F6976320040C5DC = {
 			isa = PBXGroup;
 			children = (
-				1761CFD61FE959B70092C093 /* EstimoteProximitySDK.framework */,
 				17233B581F6976320040C5DC /* DeskObserver */,
-				17233B6B1F69764A0040C5DC /* Estimote */,
+				172225A71FFE756F00822958 /* Estimote */,
 				17233B571F6976320040C5DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,13 +97,6 @@
 				176DCD091FE9310400811CF3 /* DeskObserver-Bridging-Header.h */,
 			);
 			path = DeskObserver;
-			sourceTree = "<group>";
-		};
-		17233B6B1F69764A0040C5DC /* Estimote */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Estimote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +338,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AR5P24RW9V;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../../EstimoteProximitySDK/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../../EstimoteProximitySDK/**",
+					"$(PROJECT_DIR)/Estimote",
+				);
 				INFOPLIST_FILE = DeskObserver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.estimote.DeskObserver;
@@ -354,7 +363,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../../EstimoteProximitySDK/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../../EstimoteProximitySDK/**",
+					"$(PROJECT_DIR)/Estimote",
+				);
 				INFOPLIST_FILE = DeskObserver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.estimote.DeskObserver;

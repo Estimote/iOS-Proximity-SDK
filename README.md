@@ -30,13 +30,21 @@ Note: this project was previously known as [Estimote SDK 5.0.0](https://github.c
 
 ### Manual
 
-1. Download the repo
-    - Click the "Download ZIP" button, or
+1. Download Proximity SDK repository
+    - Click the "Download ZIP" button in this repo, or
     - Run `git clone git@github.com:Estimote/iOS-SDK-Proximity-SDK.git --depth=1`
+
+1. Download Bluetooth Scanning library repo
+    - Click the "Download ZIP" button in [Bluetooth Scanning repo](https://github.com/Estimote/iOS-Bluetooth-Scanning), or
+    - Run `git clone git@github.com:Estimote/iOS-Bluetooth-Scanning.git --depth=1`
 
 1. Drag & drop [EstimoteProximitySDK.framework](EstimoteProximitySDK/EstimoteProximitySDK.framework) to your project (enable the checkbox in _Options_ > _Copy files if needed_)
 
+1. Drag & drop [EstimoteBluetoothScanning.framework](EstimoteProximitySDK/EstimoteProximitySDK.framework) to your project (enable the checkbox in _Options_ > _Copy files if needed_)
+
 1. Add Estimote Proximity SDK to your Xcode project's _Build Phases_ > _Embed Frameworks_. If this build phase isn't visible you can add the SDK in _General_ -> _Embedded Binaries_ section.
+
+1. Add Estimote Bluetooth Scanning library to your Xcode project's _Build Phases_ > _Embed Frameworks_. If this build phase isn't visible you can add the SDK in _General_ -> _Embedded Binaries_ section.
 
 1. Make sure _Always Embed Swift Standard Libraries_ build setting is set to **Yes** (this option is turned off by default for Objective–C projects). Estimote Proximity SDK contains Swift code internally and requires Swift standard libraries in the app bundle.
 

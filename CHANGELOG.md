@@ -5,10 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.8.0] - 2017-01-04
+
+### Fixed
+- Fixed  `Cannot remove an observer <CBPeripheral>` crash on iOS 11. It could occur when multiple Estimote's SDKs were used in one app project.
+
+### Changed
+- Added dependency on [Estimote Bluetooth Scanning library](https://github.com/Estimote/iOS-Bluetooth-Scanning).
+
+
+
 ## [0.7.1] - 2017-12-21
 
 ### Fixed
-- Issue where Estimote Cloud Analytics batches sending would fail (getting 400 error).
+- Fixed an issue where Estimote Cloud Analytics batches sending would fail (getting 400 error).
 
 
 ## [0.7.0] - 2017-12-20
