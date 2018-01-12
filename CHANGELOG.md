@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2017-01-12
+
+### Added
+- Added `.payload` property of `EPXProximityDeviceAttachment` which represents content of attachment defined in Estimote Cloud. This property replaces `.json`.
+
+### Deprecated
+- Deprecated `.json` property of `EPXProximityDeviceAttachment` - use `payload` instead.
+
+### Fixed
+- Fixed headerdoc `initWithDesiredMeanTriggerDistance` to explain nullability.
+
 ## [0.8.0] - 2017-01-04
 
 ### Fixed
