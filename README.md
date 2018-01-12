@@ -137,10 +137,10 @@ let blueberryZone = EPXProximityZone(range: EPXProximityRange.custom(meanTrigger
                                      attachmentKey: "desk",
                                      attachmentValue: "blueberry")
 blueberryZone.onEnterAction = { attachment in
-    print("Entered near range of 'desk':'blueberry'. Full beacon attachment: (attachment.attachmentJSON)")
+    print("Entered near range of 'desk':'blueberry'. Attachment payload: (attachment.payload)")
 }
 blueberryZone.onExitAction = { (attachment) in
-    print("Exited near range of 'desk':'blueberry'. Full beacon attachment: (attachment.attachmentJSON)")
+    print("Exited near range of 'desk':'blueberry'. Attachment payload: (attachment.payload)")
 }
 
 // ... etc. You can define as many zones as you need.
