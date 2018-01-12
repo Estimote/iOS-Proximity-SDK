@@ -58,14 +58,20 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Designated initializer.
 
- @param desiredMeanTriggerDistance Distance in meters where enter/exit events should occur rounded to decimeters (to 0.1)
+ @param desiredMeanTriggerDistance Distance in meters where enter/exit events should occur rounded to decimeters (to 0.1).
+                                   It has to be a non-negative number.
+ 
+ @return Initialized object. Nil if passed desiredMeanTriggerDistance is negative.
  */
 - (nullable instancetype)initWithDesiredMeanTriggerDistance:(double)desiredMeanTriggerDistance NS_DESIGNATED_INITIALIZER;
 
 /**
  Convenience factory method. Calls `-initWithMeanTriggerDistance:`.
 
- @param desiredMeanTriggerDistance Distance in meters where enter/exit events should occur rounded to decimeters (to 0.1)
+ @param desiredMeanTriggerDistance Distance in meters where enter/exit events should occur rounded to decimeters (to 0.1).
+                                   It has to be a non-negative number.
+ 
+ @return Initialized object. Nil if passed desiredMeanTriggerDistance is negative.
  */
 + (nullable instancetype)customRangeWithDesiredMeanTriggerDistance:(double)desiredMeanTriggerDistance
 NS_SWIFT_NAME(custom(desiredMeanTriggerDistance:));

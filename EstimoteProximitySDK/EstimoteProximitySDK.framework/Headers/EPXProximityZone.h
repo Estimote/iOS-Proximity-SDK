@@ -28,12 +28,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) EPXProximityRange *range;
 
 /**
- Key that should be in a beacon's attachment JSON so it's classified for reporting.
+ Key that should be in a beacon's attachment payload so it's classified for reporting.
  */
 @property (nonatomic, strong, readonly) NSString *attachmentKey;
 
 /**
- Value that should be in a beacon's attachment JSON so it's classified for reporting.
+ Value that should be in a beacon's attachment payload so it's classified for reporting.
  */
 @property (nonatomic, strong, readonly, nullable) NSString *attachmentValue;
 
@@ -68,8 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
  Designated initalizer.
 
  @param range Range where the action should be reported.
- @param attachmentKey Key that should be in a beacon's attachment JSON so it's classified for reporting.
- @param attachmentValue Value that should be in a beacon's attachment JSON so it's classified for reporting.
+ @param attachmentKey Key that should be in a beacon's attachment payload so it's classified for reporting.
+ @param attachmentValue Value that should be in a beacon's attachment payload so it's classified for reporting.
  */
 - (instancetype)initWithRange:(EPXProximityRange *)range
                 attachmentKey:(NSString *)attachmentKey
@@ -79,7 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
  Convenience initializer. Calls the designated inializer with nil as attachmentValue.
 
  @param range Range where the action should be reported.
- @param attachmentKey Key that should be in a beacon's attachment JSON so it's classified for reporting.
+ @param attachmentKey Key that should be in a beacon's attachment payload so it's classified for reporting.
  */
 - (instancetype)initWithRange:(EPXProximityRange *)range
                 attachmentKey:(NSString *)attachmentKey;
