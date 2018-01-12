@@ -98,7 +98,7 @@ class ViewController: UIViewController {
                                               attachmentValue: "office")
         closeVenueZone.onChangeAction = { attachmentsInside in
             print("Currently, there are \(attachmentsInside.count) attachments in close range:")
-            print("\(attachmentsInside.map({ $0.json.description }).joined(separator: "\n"))")
+            print("\(attachmentsInside.map({ $0.payload.description }).joined(separator: "\n"))")
             print("")
         }
         
@@ -117,7 +117,7 @@ class ViewController: UIViewController {
         }
         midVenueZone.onChangeAction = { attachmentsInside in
             print("Currently, there are \(attachmentsInside.count) attachments in mid range:")
-            print("\(attachmentsInside.map({ $0.json.description }).joined(separator: "\n"))")
+            print("\(attachmentsInside.map({ $0.payload.description }).joined(separator: "\n"))")
             print("")
         }
         
