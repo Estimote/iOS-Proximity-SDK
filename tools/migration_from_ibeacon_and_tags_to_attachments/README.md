@@ -20,7 +20,7 @@ Run script:
 
 `python migration.py YOUR_APP_ID YOUR_APP_TOKEN`
 
-If you're migrating from an older Proximity SDK (and not Estimote SDK or Core Location), you can add --no-ibeacon to skip migrating UUID/major/minor to attachments
+If you're migrating from an older Proximity SDK (and not Estimote SDK or Core Location), you can add `--no-ibeacon` to skip migrating UUID/major/minor to attachments
 
 ## Example
 
