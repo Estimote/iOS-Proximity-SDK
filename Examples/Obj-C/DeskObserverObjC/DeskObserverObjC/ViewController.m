@@ -65,8 +65,8 @@
     
     // TODO: The demo assumes proper settings configuration in Estimote Cloud. Make sure that:
     // - you have at least 2 beacons assigned to your Estimote Cloud account
-    // - one of the beacons has a tag `{"attachment":{"desk":"blueberry","venue":"office"}}`
-    // - another beacon has a tag `{"attachment":{"desk":"mint","venue":"office"}}`
+    // - one of the beacons has an attachment `{"desk":"blueberry","venue":"office"}`
+    // - another beacon has an attachment `{"desk":"blueberry","venue":"office"}`
     
     self.proximityObserver = [[EPXProximityObserver alloc] initWithCredentials:credentials errorBlock:^(NSError * _Nonnull error) {
         NSLog(@"Ooops! %@", error);
@@ -77,12 +77,12 @@
     EPXProximityZone *blueberryZone = [[EPXProximityZone alloc] initWithRange:[EPXProximityRange customRangeWithDesiredMeanTriggerDistance:0.5]
                                                                 attachmentKey:@"desk"
                                                               attachmentValue:@"blueberry"];
-    blueberryZone.onEnterAction = ^(EPXProximityDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
+    blueberryZone.onEnterAction = ^(EPXDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
         NSLog(@"Enter blueberry (close range)");
         self.blueberryDeskLabel.backgroundColor = self.blueberryColor;
         self.blueberryDeskLabel.textColor = [UIColor whiteColor];
     };
-    blueberryZone.onExitAction = ^(EPXProximityDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
+    blueberryZone.onExitAction = ^(EPXDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
         NSLog(@"Exit blueberry (close range)");
         self.blueberryDeskLabel.backgroundColor = [UIColor whiteColor];
         self.blueberryDeskLabel.textColor = self.blueberryColor;
@@ -93,12 +93,12 @@
     EPXProximityZone *mintZone = [[EPXProximityZone alloc] initWithRange:[EPXProximityRange customRangeWithDesiredMeanTriggerDistance:0.5]
                                                                 attachmentKey:@"desk"
                                                               attachmentValue:@"mint"];
-    mintZone.onEnterAction = ^(EPXProximityDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
+    mintZone.onEnterAction = ^(EPXDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
         NSLog(@"Enter mint (close range)");
         self.mintDeskLabel.backgroundColor = self.mintColor;
         self.mintDeskLabel.textColor = [UIColor whiteColor];
     };
-    mintZone.onExitAction = ^(EPXProximityDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
+    mintZone.onExitAction = ^(EPXDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
         NSLog(@"Exit mint (close range)");
         self.mintDeskLabel.backgroundColor = [UIColor whiteColor];
         self.mintDeskLabel.textColor = self.mintColor;
@@ -108,24 +108,24 @@
     EPXProximityZone *closeVenueZone = [[EPXProximityZone alloc] initWithRange:[EPXProximityRange customRangeWithDesiredMeanTriggerDistance:0.5]
                                                            attachmentKey:@"venue"
                                                          attachmentValue:@"office"];
-    closeVenueZone.onChangeAction = ^(NSSet<EPXProximityDeviceAttachment *> * _Nonnull attachmentsCurrentlyInside) {
+    closeVenueZone.onChangeAction = ^(NSSet<EPXDeviceAttachment *> * _Nonnull attachmentsCurrentlyInside) {
         NSLog(@"Currently, there are %@ attachments in close range: %@", @(attachmentsCurrentlyInside.count), attachmentsCurrentlyInside);
     };
     
     EPXProximityZone *midVenueZone = [[EPXProximityZone alloc] initWithRange:[EPXProximityRange customRangeWithDesiredMeanTriggerDistance:1.5]
                                                                  attachmentKey:@"venue"
                                                                attachmentValue:@"office"];
-    midVenueZone.onEnterAction = ^(EPXProximityDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
+    midVenueZone.onEnterAction = ^(EPXDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
         NSLog(@"Enter venue (mid range)");
         self.venueLabel.backgroundColor = self.venueColor;
         self.venueLabel.textColor = [UIColor whiteColor];
     };
-    midVenueZone.onExitAction = ^(EPXProximityDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
+    midVenueZone.onExitAction = ^(EPXDeviceAttachment * _Nonnull triggeringDeviceAttachment) {
         NSLog(@"Exit venue (mid range)");
         self.venueLabel.backgroundColor = [UIColor whiteColor];
         self.venueLabel.textColor = self.venueColor;
     };
-    midVenueZone.onChangeAction = ^(NSSet<EPXProximityDeviceAttachment *> * _Nonnull attachmentsCurrentlyInside) {
+    midVenueZone.onChangeAction = ^(NSSet<EPXDeviceAttachment *> * _Nonnull attachmentsCurrentlyInside) {
         NSLog(@"Currently, there are %@ attachments in mid range: %@", @(attachmentsCurrentlyInside.count), attachmentsCurrentlyInside);
     };
     

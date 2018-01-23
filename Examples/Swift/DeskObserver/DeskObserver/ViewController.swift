@@ -58,8 +58,8 @@ class ViewController: UIViewController {
         
         // TODO: The demo assumes proper settings configuration in Estimote Cloud. Make sure that:
         // - you have at least 2 beacons assigned to your Estimote Cloud account
-        // - one of the beacons has a tag `{"attachment":{"desk":"blueberry","venue":"office"}}`
-        // - another beacon has a tag `{"attachment":{"desk":"mint","venue":"office"}}`
+        // - one of the beacons has an attachment `{"desk":"blueberry","venue":"office"}`
+        // - another beacon has an attachment `{"desk":"blueberry","venue":"office"}`
         
         self.proximityObserver = EPXProximityObserver(credentials: credentials, errorBlock: { error in
             print("Ooops! \(error)")

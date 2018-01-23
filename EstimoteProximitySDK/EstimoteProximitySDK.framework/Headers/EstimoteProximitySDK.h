@@ -20,7 +20,8 @@ FOUNDATION_EXPORT const unsigned char EstimoteProximitySDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <EstimoteProximitySDK/PublicHeader.h>
 
 #import "EPXProximityObserver.h"
+#import "EPXProximityObserverConfiguration.h"
 #import "EPXProximityZone.h"
 #import "EPXProximityRange.h"
 #import "EPXCloudCredentials.h"
-#import "EPXProximityDeviceAttachment.h"
+#import "EPXDeviceAttachment.h"

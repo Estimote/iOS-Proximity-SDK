@@ -6,19 +6,22 @@
 //   |_|   |_|  \___/_/\_\_|_| |_| |_|_|\__|\__, | |____/|____/|_|\_\
 //                                          |___/
 //
-//  Copyright © 2017 Estimote. All rights reserved.
+//   Copyright © 2017 Estimote. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "EPXProximityRange.h"
-#import "EPXProximityDeviceAttachment.h"
+#import "EPXDeviceAttachment.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  Represents a logical zone. Is represented by range from a beacon and attachment rule (attachment key + attachment value).
  Can be spanned by one or more beacons. Beacon identification is attachment-based
- (see https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md for more info).
+ (see https://github.com/Estimote/iOS-Proximity-SDK/blob/master/README.md for more info).
+ 
+ Note: at the moment, Proximity SDK supports monitoring only 100 devices per zone. If more devices have their attachments
+ matching the key, value defined in the zone, the first 100 are monitored.
  */
 @interface EPXProximityZone : NSObject
 
@@ -35,25 +38,25 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Value that should be in a beacon's attachment payload so it's classified for reporting.
  */
-@property (nonatomic, strong, readonly, nullable) NSString *attachmentValue;
+@property (nonatomic, strong, readonly) NSString *attachmentValue;
 
 /**
  Register block to be called when user enters proximity of Estimote devices with matching attachment.
  Beacon identification is attachment-based (see https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md for more info).
  */
-@property (nonatomic, copy, readwrite, nullable) void (^onEnterAction)(EPXProximityDeviceAttachment *triggeringDeviceAttachment);
+@property (nonatomic, copy, readwrite, nullable) void (^onEnterAction)(EPXDeviceAttachment *triggeringDeviceAttachment);
 
 /**
  Block to be called when user exits proximity of Estimote devices with matching attachment.
  Beacon identification is attachment-based (see https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md for more info).
  */
-@property (nonatomic, copy, readwrite, nullable) void (^onExitAction)(EPXProximityDeviceAttachment *triggeringDeviceAttachment);
+@property (nonatomic, copy, readwrite, nullable) void (^onExitAction)(EPXDeviceAttachment *triggeringDeviceAttachment);
 
 /**
  Block to be called each time a new beacon is detected in user's range and each time a beacon disappears
  from user's range.
  */
-@property (nonatomic, copy, readwrite, nullable) void (^onChangeAction)(NSSet<EPXProximityDeviceAttachment *> *attachmentsCurrentlyInside);
+@property (nonatomic, copy, readwrite, nullable) void (^onChangeAction)(NSSet<EPXDeviceAttachment *> *attachmentsCurrentlyInside);
 
 /**
  Init is unavailable.
@@ -73,16 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithRange:(EPXProximityRange *)range
                 attachmentKey:(NSString *)attachmentKey
-              attachmentValue:(nullable NSString *)attachmentValue NS_DESIGNATED_INITIALIZER;
-
-/**
- Convenience initializer. Calls the designated inializer with nil as attachmentValue.
-
- @param range Range where the action should be reported.
- @param attachmentKey Key that should be in a beacon's attachment payload so it's classified for reporting.
- */
-- (instancetype)initWithRange:(EPXProximityRange *)range
-                attachmentKey:(NSString *)attachmentKey;
+              attachmentValue:(NSString *)attachmentValue NS_DESIGNATED_INITIALIZER;
 
 @end
 

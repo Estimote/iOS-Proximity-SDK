@@ -6,7 +6,7 @@
 //   |_|   |_|  \___/_/\_\_|_| |_| |_|_|\__|\__, | |____/|____/|_|\_\
 //                                          |___/
 //
-//  Copyright © 2017 Estimote. All rights reserved.
+//   Copyright © 2017 Estimote. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

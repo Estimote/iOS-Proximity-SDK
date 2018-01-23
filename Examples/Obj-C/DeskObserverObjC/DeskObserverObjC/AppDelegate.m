@@ -4,7 +4,6 @@
 
 
 #import "AppDelegate.h"
-#import <EstimoteProximitySDK/EstimoteProximitySDK.h>
 
 @interface AppDelegate ()
 

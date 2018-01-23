@@ -6,13 +6,14 @@
 //   |_|   |_|  \___/_/\_\_|_| |_| |_|_|\__|\__, | |____/|____/|_|\_\
 //                                          |___/
 //
-//  Copyright © 2017 Estimote. All rights reserved.
+//   Copyright © 2017 Estimote. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-#import "EPXCloudCredentials.h"
-#import "EPXProximityZone.h"
+@class EPXCloudCredentials;
+@class EPXProximityZone;
+@class EPXProximityObserverConfiguration;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -59,12 +60,23 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
 + (instancetype)new NS_UNAVAILABLE;
 
 /**
- Default initializer.
+ Convenience initializer. Calls designated initializer with default configuration.
  @param credentials Cloud Credentials object used to authorize requests sent to Estimote Cloud.
  @param errorBlock Block invoked whenever error occurs. The parameter is an NSError object, with
                    domain equal to EPXProximityObserverErrorDomain and code from EPXProximityObserverError enum.
  */
 - (instancetype)initWithCredentials:(EPXCloudCredentials *)credentials
+                         errorBlock:(void (^)(NSError *error))errorBlock;
+
+/**
+ Designated initializer.
+ @param credentials Cloud Credentials object used to authorize requests sent to Estimote Cloud.
+ @param configuration Proximity observer configuration that can be used for Proximity Observer's behaviour customization.
+ @param errorBlock Block invoked whenever error occurs. The parameter is an NSError object, with
+                   domain equal to EPXProximityObserverErrorDomain and code from EPXProximityObserverError enum.
+ */
+- (instancetype)initWithCredentials:(EPXCloudCredentials *)credentials
+                      configuration:(EPXProximityObserverConfiguration *)configuration
                          errorBlock:(void (^)(NSError *error))errorBlock;
 
 /**
@@ -75,7 +87,10 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
 
  Subsequent calls of this method cause overwriting previously observed zones.
 
- @param zones Zones to be observed
+ Note: at the moment, Proximity SDK supports monitoring only 100 devices per zone. If more devices have their attachments
+ matching the key, value defined in the zone, the first 100 are monitored.
+ 
+ @param zones Zones to be observed.
  */
 - (void)startObservingZones:(NSArray<EPXProximityZone *> *)zones;
 

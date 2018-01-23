@@ -65,16 +65,6 @@ Details of each of your Estimote devices are available in [Estimote Cloud](https
 
 Each device has an associated JSON. When the SDK detects a proximity change of a device, it checks the device's attachment JSON to see which registered rule should be applied.
 
-Temporarily, attachment JSONs are encoded in [tags](https://community.estimote.com/hc/en-us/articles/204909347-How-to-tag-and-search-for-beacons-in-Estimote-Cloud-). The convention for a tag-encoded attachment is 
-```
-{
-    "attachment" : {
-        // Attachment JSON goes here.
-        // You can put here any JSON you wish to use in your apps.
-    }
-}
-```
-
 ### Example
 
 To get a working prototype, check out the [Desk Observer](Examples/Swift/DeskObserver) example app. It's a single screen app with three labels that change background color:
@@ -99,18 +89,17 @@ These attachments can be used to define the zones presented below:
 To conifgure the attachments:
 1. Go to https://cloud.estimote.com/#/
 1. Click on the beacon you want to configure
-1. Click _Edit settings_ button
-1. Click _Tags_ field
-1. Click _Create New Tag_ button
-1. Paste in the JSON with attachment that's going to represent your beacon
-1. Click _Save changes_
+1. Click _Settings_ button
+1. Click _Beacon Attachment_ field
+1. Add any attachment key-value pair you want
+1. Click _Save Changes_
 
-Tags are Cloud-only settings — no additional connecting to the beacons with the Estimote app is required.
+Tags are Cloud-only settings — no additional connecting to the beacons with the Estimote app is required!
 
-![](readme_images/adding_attachment_json_tag.png)
+![](readme_images/adding_attachments.png)
 
 <p align="center">
-    <i>Assigning attachment JSON as tag</i>
+    <i>Assigning beacon attachments</i>
 </p>
 
 ### Inside your app
@@ -139,7 +128,7 @@ let blueberryZone = EPXProximityZone(range: EPXProximityRange.custom(meanTrigger
 blueberryZone.onEnterAction = { attachment in
     print("Entered near range of 'desk':'blueberry'. Attachment payload: (attachment.payload)")
 }
-blueberryZone.onExitAction = { (attachment) in
+blueberryZone.onExitAction = { attachment in
     print("Exited near range of 'desk':'blueberry'. Attachment payload: (attachment.payload)")
 }
 

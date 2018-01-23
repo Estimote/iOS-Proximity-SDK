@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+## [0.10.0] - 2017-01-23
+
+### Changed
+- Estimote Proximity SDK now uses attachments configured in Estimote Cloud. No more encoding JSONs in tags!
+- Renamed `EPXProximityDeviceAttachment` to `EPXDeviceAttachment`.
+- `EPXProximityZone`'s `attachmentValue` is now `nonnull`.
+
+### Added 
+- Added `EPXProximityObserverConfiguration` - it allows configuring Proximity Observer. At the moment, it only contains log level, but will be extended in the future.
+
+### Removed
+- Removed deprecated `EPXDeviceAttachment`'s `json` property. From now on, use `payload`.
+
+
 ## [0.9.0] - 2017-01-12
 
 ### Added
@@ -16,6 +31,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 - Fixed headerdoc `initWithDesiredMeanTriggerDistance` to explain nullability.
 
+
 ## [0.8.0] - 2017-01-04
 
 ### Fixed
@@ -23,7 +39,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Added dependency on [Estimote Bluetooth Scanning library](https://github.com/Estimote/iOS-Bluetooth-Scanning).
-
 
 
 ## [0.7.1] - 2017-12-21
