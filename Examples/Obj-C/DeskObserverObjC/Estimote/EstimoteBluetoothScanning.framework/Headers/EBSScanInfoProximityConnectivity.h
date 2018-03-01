@@ -12,8 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "EBSScanInfo.h"
 
-typedef NS_ENUM(NSInteger , EBSScanInfoProximityFirmwareState)
-{
+typedef NS_ENUM(NSInteger , EBSScanInfoProximityFirmwareState) {
     EBSScanInfoProximityFirmwareStateBoot = 0,
     EBSScanInfoProximityFirmwareStateApp
 };

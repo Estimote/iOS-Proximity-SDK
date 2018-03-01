@@ -12,8 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "EBSScanInfo.h"
 
-typedef NS_ENUM(NSInteger , EBSScanInfoEstimoteLocationAdvertisingChannel)
-{
+typedef NS_ENUM(NSInteger , EBSScanInfoEstimoteLocationAdvertisingChannel) {
     EBSScanInfoEstimoteLocationAdvertisingChannelUnknown = 0,
     EBSScanInfoEstimoteLocationAdvertisingChannel37,
     EBSScanInfoEstimoteLocationAdvertisingChannel38,

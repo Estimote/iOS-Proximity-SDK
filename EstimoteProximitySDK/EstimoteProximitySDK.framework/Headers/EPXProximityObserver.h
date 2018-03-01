@@ -30,9 +30,6 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
     /* Fetching attachments from Cloud failed. */
     EPXProximityObserverErrorFetchingAttachmentsFailed,
 
-    /* Observed zone doesn't match any attachments fetched from Cloud. */
-    EPXProximityObserverErrorNoAttachmentsMatchingZone,
-
     /* Bluetooth is unsupported on this iOS device. */
     EPXProximityObserverErrorBluetoothUnsupported,
 

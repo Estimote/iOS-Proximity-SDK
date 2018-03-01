@@ -14,22 +14,29 @@
 #define EBSScanInfoEstimoteUtilitiesErrorDomain @"EBSScanInfoEstimoteUtilitiesErrorDomain"
 
 /**
- *  ENUM describing bluetooth packet frame type.
+ *  Estimote packet type. Note that the values under the enum aren't equal to values broadcast in the packets.
  */
-typedef NS_ENUM(NSInteger, EBSScanInfoFrameType)
-{
+typedef NS_ENUM(NSInteger, EBSScanInfoFrameType) {
     /**
      *  Unknown frame type, parsing error.
      */
-    EBSScanInfoFrameTypeUnknown,
+    EBSScanInfoFrameTypeUnknown = 0,
     /**
-     *  Service Data frame type.
+     *  Estimote Connectivity frame type.
      */
-    EBSScanInfoFrameTypeServiceDevice,
+    EBSScanInfoFrameTypeEstimoteConnectivity,
+    /**
+     *  Estimote Location frame type.
+     */
+    EBSScanInfoFrameTypeEstimoteLocation,
     /**
      *  Estimote Telemetry frame type.
      */
     EBSScanInfoFrameTypeEstimoteTelemetry,
+    /**
+     *  Estimote UWB frame type.
+     */
+    EBSScanInfoFrameTypeUWB,
     /**
      *  Estimote Mirror frame type.
      */
@@ -41,10 +48,9 @@ typedef NS_ENUM(NSInteger, EBSScanInfoFrameType)
 };
 
 /**
- *  ENUM describing bluetooth packet subframe type.
+ *  Estimote packet's subframe type
  */
-typedef NS_ENUM(NSInteger, EBSScanInfoSubframeType)
-{
+typedef NS_ENUM(NSInteger, EBSScanInfoSubframeType) {
     /**
      *  Unknown subframe type, parsing error.
      */
@@ -59,24 +65,21 @@ typedef NS_ENUM(NSInteger, EBSScanInfoSubframeType)
     EBSScanInfoSubframeTypeTelemetryB
 };
 
-typedef NS_ENUM(NSInteger, EBSScanInfoTimeUnit)
-{
+typedef NS_ENUM(NSInteger, EBSScanInfoTimeUnit) {
     EBSScanInfoTimeUnitSeconds = 0,
     EBSScanInfoTimeUnitMinutes = 1,
     EBSScanInfoTimeUnitHours = 2,
     EBSScanInfoTimeUnitDaysWeeks = 3
 };
 
-typedef NS_ENUM(NSInteger, EBSScanInfoEstimoteUtilitiesError)
-{
+typedef NS_ENUM(NSInteger, EBSScanInfoEstimoteUtilitiesError) {
     ECOScanInfoEstimoteUtilitiesMeasuredPowerError = 1
 };
 
 /**
  *  Enum with available protocol versions
  */
-typedef NS_ENUM(NSInteger, EBSScanInfoProtocolVersion)
-{
+typedef NS_ENUM(NSInteger, EBSScanInfoProtocolVersion) {
     EBSScanInfoProtocolVersionUnsupported = -1,
     // XXX: the raw values of this enum don't match the actual protocol version codes (e.g., v1.0 = "0", not "1")
     // this usually isn't a problem, except may ocassionally cause some confusion, especially when printing EBSScanInfoEstimoteTelemetry objects (the `description` method will print out "1", not "0" for v1.0)

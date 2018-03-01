@@ -13,8 +13,7 @@
 #import "EBSScanInfo.h"
 
 
-typedef NS_ENUM(NSInteger, EBSScanInfoRangingInProgressFlag)
-{
+typedef NS_ENUM(NSInteger, EBSScanInfoRangingInProgressFlag) {
     /* Broadcasting only */
     EBSScanInfoRangingNotInProgress = 0,
     /* Ranging us in progress */

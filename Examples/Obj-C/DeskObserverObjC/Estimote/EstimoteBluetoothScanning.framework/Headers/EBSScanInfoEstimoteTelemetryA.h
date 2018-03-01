@@ -91,6 +91,28 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, readonly, nullable) NSNumber *pressureInPascals;
 
+/**
+ * Init.
+ */
+- (instancetype)initWithPeripheralIdentifier:(NSUUID *)peripheralIdentifier
+                                        rssi:(NSNumber *)rssi
+                                    scanDate:(NSDate *)scanDate
+                             shortIdentifier:(NSString *)shortIdentifier
+                             protocolVersion:(EBSScanInfoProtocolVersion)protocolVersion
+                               accelerationX:(NSNumber *)accelerationX
+                               accelerationY:(NSNumber *)accelerationY
+                               accelerationZ:(NSNumber *)accelerationZ
+        previousMotionStateDurationInSeconds:(NSNumber *)previousMotionStateDurationInSeconds
+         currentMotionStateDurationInSeconds:(NSNumber *)currentMotionStateDurationInSeconds
+                                 motionState:(NSNumber *)motionState
+                              gpioPort0Value:(NSNumber *)gpioPort0Value
+                              gpioPort1Value:(NSNumber *)gpioPort1Value
+                              gpioPort2Value:(NSNumber *)gpioPort2Value
+                              gpioPort3Value:(NSNumber *)gpioPort3Value
+                            applicationError:(NSNumber *)applicationError
+                          realTimeClockError:(NSNumber *)realTimeClockError
+                           pressureInPascals:(NSNumber *)pressureInPascals;
+
 NS_ASSUME_NONNULL_END
 
 @end

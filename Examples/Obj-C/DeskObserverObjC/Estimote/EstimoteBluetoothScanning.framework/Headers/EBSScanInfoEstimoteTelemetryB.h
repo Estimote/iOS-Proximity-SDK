@@ -74,6 +74,25 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, readonly, nullable) NSNumber *realTimeClockError;
 
+/**
+ * Init.
+ */
+- (instancetype)initWithPeripheralIdentifier:(NSUUID *)peripheralIdentifier
+                                        rssi:(NSNumber *)rssi
+                                    scanDate:(NSDate *)scanDate
+                             shortIdentifier:(NSString *)shortIdentifier
+                             protocolVersion:(EBSScanInfoProtocolVersion)protocolVersion
+                    normalizedMagneticFieldX:(NSNumber *)normalizedMagneticFieldX
+                    normalizedMagneticFieldY:(NSNumber *)normalizedMagneticFieldY
+                    normalizedMagneticFieldZ:(NSNumber *)normalizedMagneticFieldZ
+                      ambientLightLevelInLux:(NSNumber *)ambientLightLevelInLux
+                        temperatureInCelsius:(NSNumber *)temperatureInCelsius
+                  batteryVoltageInMillivolts:(NSNumber *)batteryVoltageInMillivolts
+                                batteryLevel:(NSNumber *)batteryLevel
+                             uptimeInSeconds:(NSNumber *)uptimeInSeconds
+                            applicationError:(NSNumber *)applicationError
+                          realTimeClockError:(NSNumber *)realTimeClockError;
+
 NS_ASSUME_NONNULL_END
 
 @end

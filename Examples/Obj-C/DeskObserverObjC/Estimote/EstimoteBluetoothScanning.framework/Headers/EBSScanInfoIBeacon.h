@@ -12,8 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "EBSScanInfo.h"
 
-typedef NS_ENUM(NSInteger , EBSScanInfoIBeaconFirmwareState)
-{
+typedef NS_ENUM(NSInteger , EBSScanInfoIBeaconFirmwareState) {
     EBSScanInfoIBeaconFirmwareStateBoot = 0,
     EBSScanInfoIBeaconFirmwareStateApp
 };

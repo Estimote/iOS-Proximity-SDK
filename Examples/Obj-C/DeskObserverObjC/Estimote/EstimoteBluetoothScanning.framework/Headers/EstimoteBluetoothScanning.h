@@ -34,3 +34,5 @@ FOUNDATION_EXPORT const unsigned char EstimoteBluetoothScanningVersionString[];
 #import "EBSScanInfoNearable.h"
 #import "EBSScanInfoProximityConnectivity.h"
 #import "EBSScanInfoUWB.h"
+#import "EBSScanInfoGeneric.h"
+#import "EBSScanInfoEstimoteEncrypted.h"

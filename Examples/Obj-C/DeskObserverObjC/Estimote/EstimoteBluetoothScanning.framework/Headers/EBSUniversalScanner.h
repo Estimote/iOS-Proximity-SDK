@@ -26,8 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The possible errors returned during scanning Estimote Devices.
  */
-typedef NS_ENUM(NSInteger, EBSUniversalScannerError)
-{
+typedef NS_ENUM(NSInteger, EBSUniversalScannerError) {
     /** The platform does not support Bluetooth low energy. */
     EBSUniversalScannerErrorBluetoothNotSupported,
 
@@ -36,6 +35,24 @@ typedef NS_ENUM(NSInteger, EBSUniversalScannerError)
 
     /** Bluetooth is currently powered off. */
     EBSUniversalScannerErrorBluetoothOff,
+};
+
+/**
+ Represents the current state of a Central Manager.
+ */
+typedef NS_ENUM(NSUInteger, EBSCentralManagerState) {
+    /* State unknown, update imminent. */
+    EBSCentralManagerStateUnknown = 0,
+    /* The connection with the system service was momentarily lost, update imminent. */
+    EBSCentralManagerStateResetting = 1,
+    /* The platform doesn't support the Bluetooth Low Energy Central/Client role. */
+    EBSCentralManagerStateUnsupported = 2,
+    /* The application is not authorized to use the Bluetooth Low Energy Central/Client role. */
+    EBSCentralManagerStateUnauthorized = 3,
+    /* Bluetooth is currently powered off. */
+    EBSCentralManagerStatePoweredOff = 4,
+    /* Bluetooth is currently powered on and available to use. */
+    EBSCentralManagerStatePoweredOn = 5,
 };
 
 /**
@@ -110,7 +127,7 @@ typedef NS_ENUM(NSInteger, EBSUniversalScannerError)
 /**
  Core Bluetooth Central Manager state.
  */
-@property (nonatomic, assign, readonly) CBCentralManagerState state;
+@property (nonatomic, assign, readonly) EBSCentralManagerState state;
 
 /**
  Start a scan for Estimote devices of specified types.

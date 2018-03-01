@@ -12,21 +12,18 @@
 #import <Foundation/Foundation.h>
 #import "EBSScanInfo.h"
 
-typedef NS_ENUM(NSInteger , EBSScanInfoNearableFirmwareState)
-{
+typedef NS_ENUM(NSInteger , EBSScanInfoNearableFirmwareState) {
     EBSScanInfoNearableFirmwareStateBoot = 0,
     EBSScanInfoNearableFirmwareStateApp
 };
 
-typedef NS_ENUM(NSInteger , EBSScanInfoNearableMotionState)
-{
+typedef NS_ENUM(NSInteger , EBSScanInfoNearableMotionState) {
     EBSScanInfoNearableMotionStateNotMoving = 0,
     EBSScanInfoNearableMotionStateMoving
 };
 
 // TODO: rename to EBS!
-typedef NS_ENUM(NSInteger , EBSScanInfoNearableAdvertisingChannel)
-{
+typedef NS_ENUM(NSInteger , EBSScanInfoNearableAdvertisingChannel) {
     ECOScanInfoAdvertisingNearableChannelUnknown = 0,
     ECOScanInfoAdvertisingNearableChannel37,
     ECOScanInfoAdvertisingNearableChannel38,
