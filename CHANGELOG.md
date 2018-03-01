@@ -6,7 +6,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
-## [0.10.0] - 2017-01-23
+## [0.11.0] - 2018-03-01
+
+### Added
+- Estimote Secure Monitoring support.   
+
+### Changed
+- Lack attachments assigned to devices does not stop observing proximity zones.
+
+### Removed
+- Case `NoAttachmentsMatchingZone` of enum`EPXProximityObserverError`.
+
+## [0.10.0] - 2018-01-23
 
 ### Changed
 - Estimote Proximity SDK now uses attachments configured in Estimote Cloud. No more encoding JSONs in tags!
@@ -20,7 +31,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Removed deprecated `EPXDeviceAttachment`'s `json` property. From now on, use `payload`.
 
 
-## [0.9.0] - 2017-01-12
+## [0.9.0] - 2018-01-12
 
 ### Added
 - Added `.payload` property of `EPXProximityDeviceAttachment` which represents content of attachment defined in Estimote Cloud. This property replaces `.json`.
@@ -32,7 +43,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Fixed headerdoc `initWithDesiredMeanTriggerDistance` to explain nullability.
 
 
-## [0.8.0] - 2017-01-04
+## [0.8.0] - 2018-01-04
 
 ### Fixed
 - Fixed  `Cannot remove an observer <CBPeripheral>` crash on iOS 11. It could occur when multiple Estimote's SDKs were used in one app project.
