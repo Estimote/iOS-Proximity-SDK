@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EPXProximityZone Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/EPXProximityZone" class="dashAnchor"></a>
+    <a title="EPXProximityZone Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">EstimoteProximitySDK Docs</a> (78% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">EstimoteProximitySDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EPXProximityZone Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EPXCloudCredentials.html">EPXCloudCredentials</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPXProximityObserver.html">EPXProximityObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPXProximityObserverConfiguration.html">EPXProximityObserverConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPXProximityRange.html">EPXProximityRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPXProximityZone.html">EPXProximityZone</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@EPXProximityObserverErrorDomain">EPXProximityObserverErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/EPXLogLevel.html">EPXLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EPXProximityObserverError.html">EPXProximityObserverError</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EPXProximityZone</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">EPXProximityZone</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a logical zone. Is represented by range from a beacon and attachment rule (attachment key + attachment value).
+Can be spanned by one or more beacons. Beacon identification is attachment-based
+(see <a href="https://github.com/Estimote/iOS-Proximity-SDK/blob/master/README.md">https://github.com/Estimote/iOS-Proximity-SDK/blob/master/README.md</a> for more info).</p>
+
+<p>Note: at the moment, Proximity SDK supports monitoring only 100 devices per zone. If more devices have their attachments
+matching the key, value defined in the zone, the first 100 are monitored.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(py)range"></a>
+                    <a name="//apple_ref/objc/Property/range" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)range">range</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Range where the action should be reported.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">range</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">range</span><span class="p">:</span> <span class="kt"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(py)attachmentKey"></a>
+                    <a name="//apple_ref/objc/Property/attachmentKey" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)attachmentKey">attachmentKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Key that should be in a beacon&rsquo;s attachment payload so it&rsquo;s classified for reporting.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">attachmentKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">attachmentKey</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(py)attachmentValue"></a>
+                    <a name="//apple_ref/objc/Property/attachmentValue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)attachmentValue">attachmentValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Value that should be in a beacon&rsquo;s attachment payload so it&rsquo;s classified for reporting.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">attachmentValue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">attachmentValue</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(py)onEnterAction"></a>
+                    <a name="//apple_ref/objc/Property/onEnterAction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onEnterAction">onEnterAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register block to be called when user enters proximity of Estimote devices with matching attachment.
+Beacon identification is attachment-based (see <a href="https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md">https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md</a> for more info).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
+    <span class="p">(</span><span class="n"><a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onEnterAction</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onEnterAction</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(py)onExitAction"></a>
+                    <a name="//apple_ref/objc/Property/onExitAction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onExitAction">onExitAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block to be called when user exits proximity of Estimote devices with matching attachment.
+Beacon identification is attachment-based (see <a href="https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md">https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md</a> for more info).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
+    <span class="p">(</span><span class="n"><a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onExitAction</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onExitAction</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(py)onChangeAction"></a>
+                    <a name="//apple_ref/objc/Property/onChangeAction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onChangeAction">onChangeAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Block to be called each time a new beacon is detected in user&rsquo;s range and each time a beacon disappears
+from user&rsquo;s range.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n"><a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onChangeAction</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onChangeAction</span><span class="p">:</span> <span class="p">((</span><span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init is unavailable.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(cm)new"></a>
+                    <a name="//apple_ref/objc/Method/+new" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(cm)new">+new</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>New is unavailable.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span> <span class="n">new</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZone(im)initWithRange:attachmentKey:attachmentValue:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithRange:attachmentKey:attachmentValue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(im)initWithRange:attachmentKey:attachmentValue:">-initWithRange:attachmentKey:attachmentValue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Designated initalizer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithRange</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">range</span>
+                        <span class="nf">attachmentKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">attachmentKey</span>
+                      <span class="nf">attachmentValue</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">attachmentValue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">range</span><span class="p">:</span> <span class="kt"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span><span class="p">,</span> <span class="nv">attachmentKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">attachmentValue</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Range where the action should be reported.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attachmentKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key that should be in a beacon&rsquo;s attachment payload so it&rsquo;s classified for reporting.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attachmentValue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Value that should be in a beacon&rsquo;s attachment payload so it&rsquo;s classified for reporting.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Estimote</a>. All rights reserved. (Last updated: 2018-03-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
