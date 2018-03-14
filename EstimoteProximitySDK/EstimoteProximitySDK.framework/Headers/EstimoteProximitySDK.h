@@ -9,7 +9,7 @@
 //  Copyright © 2017 Estimote. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for EstimoteProximitySDK.
 FOUNDATION_EXPORT double EstimoteProximitySDKVersionNumber;

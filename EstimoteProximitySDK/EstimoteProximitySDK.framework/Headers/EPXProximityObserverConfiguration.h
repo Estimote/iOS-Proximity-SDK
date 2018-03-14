@@ -11,6 +11,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  Defines logger level.
  */
@@ -34,7 +36,7 @@ typedef NS_ENUM(NSUInteger, EPXLogLevel) {
 @interface EPXProximityObserverConfiguration : NSObject
 
 /**
- Default Proximity Observer configuration.
+ Creates a default Proximity Observer configuration object.
  */
 @property (nonatomic, strong, readonly, class) EPXProximityObserverConfiguration *defaultConfiguration;
 
@@ -44,3 +46,5 @@ typedef NS_ENUM(NSUInteger, EPXLogLevel) {
 @property (nonatomic, assign, readwrite) EPXLogLevel logLevel;
 
 @end
+
+NS_ASSUME_NONNULL_END

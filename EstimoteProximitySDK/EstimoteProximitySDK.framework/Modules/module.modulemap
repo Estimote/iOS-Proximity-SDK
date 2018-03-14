@@ -7,13 +7,19 @@
 //                                          |___/
 //
 //  Copyright © 2017 Estimote. All rights reserved.
-//
 
 framework module EstimoteProximitySDK {
     umbrella header "EstimoteProximitySDK.h"
     
     export *
     module * { export * }
+    
+    framework module Private {
+        umbrella header "EstimoteProximitySDKPrivate.h"
+
+        export *
+        module * { export * }
+    }
 }
 
 
