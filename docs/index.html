@@ -13,7 +13,7 @@
     <a title="EstimoteProximitySDK  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">EstimoteProximitySDK Docs</a> (78% documented)</p>
+        <p><a href="index.html">EstimoteProximitySDK Docs</a> (75% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -55,6 +55,12 @@
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@EPXProximityObserverErrorDomain">EPXProximityObserverErrorDomain</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EstimoteProximitySDKVersionNumber">EstimoteProximitySDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@EstimoteProximitySDKVersionString">EstimoteProximitySDKVersionString</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -74,158 +80,44 @@
         <section>
           <section class="section">
             
-            <h1 id='ios-proximity-sdk' class='heading'>iOS-Proximity-SDK</h1>
+            <h1 id='ios-proximity-sdk-source' class='heading'>iOS-Proximity-SDK-Source</h1>
 
-<p>Estimote Proximity SDK for iOS</p>
-<h2 id='introduction' class='heading'>Introduction</h2>
-
-<p>Estimote Proximity SDK aims to provide a simple way for apps to react to physical context by reading signals from <a href="https://estimote.com/products/">Estimote Beacons</a>. It uses Core Bluetooth and Core Location frameworks to provide the best beacon-based experience possible.</p>
-
-<p>Note: this project was previously known as <a href="https://github.com/Estimote/iOS-SDK/tree/sdk_5">Estimote SDK 5.0.0</a>.</p>
-<h3 id='why-should-you-use-it' class='heading'>Why should you use it</h3>
-
-<ol>
-<li>Reliability. It&rsquo;s built upon <a href="http://blog.estimote.com/post/163745555265/estimote-monitoring-20-with-even-better-accuracy">Estimote Monitoring</a>, Estimote&rsquo;s algorithm for reliable enter/exit reporting.</li>
-<li>No need to operate on abstract identifiers, or Proximity UUID, Major, Minor triplets. Estimote Proximity SDK lets you define zones by setting predicates for human-readable JSONs.</li>
-<li>You can define multiple zones for a single beacon, i.e. at different ranges.</li>
-<li>Cloud-backed grouping. When you change your mind and want to replace one beacon with another, all you need to do is reassign JSON attachments in Estimote Cloud. You don&rsquo;t even need to connect to the beacon!</li>
-</ol>
-<h2 id='installation' class='heading'>Installation</h2>
-<h3 id='cocoapods' class='heading'>CocoaPods</h3>
-
-<p><a href="https://cocoapods.org/">CocoaPods</a> is an easy way to add external libraries. To use it to fetch Proximity SDK:</p>
-
-<ol>
-<li><p>Add <code>pod &#39;EstimoteProximitySDK&#39;</code> to your Podfile</p></li>
-<li><p>Run <code>pod install --repo-update</code></p></li>
-<li><p>Make sure <em>Always Embed Swift Standard Libraries</em> build setting is set to <strong>Yes</strong> (this option is turned off by default for Objective–C projects). Estimote Proximity SDK contains Swift code internally and requires Swift standard libraries in the app bundle.</p></li>
-<li><p>Add <code>import EstimoteProximitySDK</code> (Swift) or  <code>#import &lt;EstimoteProximitySDK/EstimoteProximitySDK.h&gt;</code> (Objective–C) to your code</p></li>
-</ol>
-<h3 id='manual' class='heading'>Manual</h3>
-
-<ol>
-<li><p>Download Proximity SDK repository</p>
-
-<ul>
-<li>Click the <q>Download ZIP</q> button in this repo, or</li>
-<li>Run <code>git clone git@github.com:Estimote/iOS-SDK-Proximity-SDK.git --depth=1</code></li>
-</ul></li>
-<li><p>Download Bluetooth Scanning library repo</p>
-
-<ul>
-<li>Click the <q>Download ZIP</q> button in <a href="https://github.com/Estimote/iOS-Bluetooth-Scanning">Bluetooth Scanning repo</a>, or</li>
-<li>Run <code>git clone git@github.com:Estimote/iOS-Bluetooth-Scanning.git --depth=1</code></li>
-</ul></li>
-<li><p>Drag &amp; drop <a href="EstimoteProximitySDK/EstimoteProximitySDK.framework">EstimoteProximitySDK.framework</a> to your project (enable the checkbox in <em>Options</em> &gt; <em>Copy files if needed</em>)</p></li>
-<li><p>Drag &amp; drop <a href="EstimoteProximitySDK/EstimoteProximitySDK.framework">EstimoteBluetoothScanning.framework</a> to your project (enable the checkbox in <em>Options</em> &gt; <em>Copy files if needed</em>)</p></li>
-<li><p>Add Estimote Proximity SDK to your Xcode project&rsquo;s <em>Build Phases</em> &gt; <em>Embed Frameworks</em>. If this build phase isn&rsquo;t visible you can add the SDK in <em>General</em> -&gt; <em>Embedded Binaries</em> section.</p></li>
-<li><p>Add Estimote Bluetooth Scanning library to your Xcode project&rsquo;s <em>Build Phases</em> &gt; <em>Embed Frameworks</em>. If this build phase isn&rsquo;t visible you can add the SDK in <em>General</em> -&gt; <em>Embedded Binaries</em> section.</p></li>
-<li><p>Make sure <em>Always Embed Swift Standard Libraries</em> build setting is set to <strong>Yes</strong> (this option is turned off by default for Objective–C projects). Estimote Proximity SDK contains Swift code internally and requires Swift standard libraries in the app bundle.</p></li>
-<li><p>Add <code>import EstimoteProximitySDK</code> (Swift) or  <code>#import &lt;EstimoteProximitySDK/EstimoteProximitySDK.h&gt;</code> (Objective–C) to your code</p></li>
-</ol>
-<h2 id='requirements' class='heading'>Requirements</h2>
-
-<ul>
-<li>One or more <a href="https://estimote.com/products/">Estimote Proximity or Location Beacons</a> configured for Estimote Monitoring. It&rsquo;s enabled by default in dev kits shipped after mid-September 2017; to enable it on your own check out the instructions.</li>
-<li>An iOS device with Bluetooth Low Energy running iOS 10 or later. Using BLE with iOS Simulator isn&rsquo;t supported.</li>
-</ul>
-<h2 id='usage' class='heading'>Usage</h2>
-
-<p>The library is compatible with both Objective–C and Swift. The public-facing classes are written in Objective–C, the API is optimized for Swift. It&rsquo;s distributed as a dynamic framework.</p>
-<h2 id='attachment-based-identification' class='heading'>Attachment-based identification</h2>
-
-<p>Details of each of your Estimote devices are available in <a href="https://cloud.estimote.com/#/">Estimote Cloud</a>. Each device has a unique identifier, but remembering it and using it for every one of your devices can be challenging. This is why Estimote Proximity SDK uses attachment-based identification.</p>
-
-<p>Each device has an associated JSON. When the SDK detects a proximity change of a device, it checks the device&rsquo;s attachment JSON to see which registered rule should be applied.</p>
-<h3 id='example' class='heading'>Example</h3>
-
-<p>To get a working prototype, check out the <a href="Examples/Swift/DeskObserver">Desk Observer</a> example app. It&rsquo;s a single screen app with three labels that change background color:</p>
-
-<ul>
-<li>when you are in close proximity to the first desk,</li>
-<li>in close proximity to the second desk,</li>
-<li>when you are in the venue in general.</li>
-</ul>
-
-<p>The demo requires at least two Proximity or Location beacons configured for Estimote Monitoring.</p>
-
-<p>The demo expects beacons having specific tags assigned:</p>
-
-<ul>
-<li><code>{&quot;attachment&quot;:{&quot;desk&quot;:&quot;blueberry&quot;,&quot;venue&quot;:&quot;office&quot;}}</code> for the first one,</li>
-<li><code>{&quot;attachment&quot;:{&quot;desk&quot;:&quot;mint&quot;,&quot;venue&quot;:&quot;office&quot;}}</code> for the second one.</li>
-</ul>
-
-<p>These attachments can be used to define the zones presented below:</p>
-
-<p><img src="readme_images/demo_attachments.png" alt=""></p>
-
-<p align="center">
-    <i>Attachment-based zones</i>
-</p>
-
-<p>To conifgure the attachments:</p>
-
-<ol>
-<li>Go to <a href="https://cloud.estimote.com/#/">https://cloud.estimote.com/#/</a></li>
-<li>Click on the beacon you want to configure</li>
-<li>Click <em>Settings</em> button</li>
-<li>Click <em>Beacon Attachment</em> field</li>
-<li>Add any attachment key-value pair you want</li>
-<li>Click <em>Save Changes</em></li>
-</ol>
-
-<p>Tags are Cloud-only settings — no additional connecting to the beacons with the Estimote app is required!</p>
-
-<p><img src="readme_images/adding_attachments.png" alt=""></p>
-
-<p align="center">
-    <i>Assigning beacon attachments</i>
-</p>
-<h3 id='inside-your-app' class='heading'>Inside your app</h3>
-
-<p>To use the SDK within your app, go to the <a href="https://cloud.estimote.com/#/apps">apps section</a> in Estimote Cloud. Register a new app or use one of the available templates to obtain App ID &amp; App Token credentials pair.</p>
-
-<p>In your app, set up the credentials using <code>ESTCloudCredentials</code>:</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">credentials</span> <span class="o">=</span> <span class="kt">EPXCloudCredentials</span><span class="p">(</span><span class="nv">appID</span><span class="p">:</span> <span class="s">"your-app-id"</span><span class="p">,</span> <span class="nv">appToken</span><span class="p">:</span> <span class="s">"your-app-token"</span><span class="p">)</span>
+<p>Source of <a href="https://github.com/Estimote/iOS-Proximity-SDK">Estimote Proximity SDK</a>. It uses <a href="https://github.com/Estimote/iOS-Bluetooth-Scanningf">EstimoteBluetoothScanning</a> as a submodule, so clone the SDK source with </p>
+<pre class="highlight plaintext"><code>git clone git@github.com:Estimote/iOS-Proximity-SDK.git --recursive
 </code></pre>
 
-<p>Then, configure proximity discovery with <code><a href="Classes/EPXProximityObserver.html">EPXProximityObserver</a></code>. For more info on attachments, see <a href="#attachment-based-identification">this section</a>.</p>
-<pre class="highlight swift"><code><span class="c1">// Create observer instance</span>
-<span class="k">self</span><span class="o">.</span><span class="n">proximityObserver</span> <span class="o">=</span> <span class="kt">EPXProximityObserver</span><span class="p">(</span><span class="nv">credentials</span><span class="p">:</span> <span class="n">credentials</span><span class="p">,</span> <span class="nv">errorBlock</span><span class="p">:</span> <span class="p">{</span> <span class="n">error</span> <span class="k">in</span>
-    <span class="nf">print</span><span class="p">(</span><span class="s">"Ooops! </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
-<span class="p">})</span>
-
-
-<span class="c1">// Define zones</span>
-<span class="k">let</span> <span class="nv">blueberryZone</span> <span class="o">=</span> <span class="kt">EPXProximityZone</span><span class="p">(</span><span class="nv">range</span><span class="p">:</span> <span class="kt">EPXProximityRange</span><span class="o">.</span><span class="nf">custom</span><span class="p">(</span><span class="nv">meanTriggerDistance</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">)</span><span class="o">!</span><span class="p">,</span>
-                                     <span class="nv">attachmentKey</span><span class="p">:</span> <span class="s">"desk"</span><span class="p">,</span>
-                                     <span class="nv">attachmentValue</span><span class="p">:</span> <span class="s">"blueberry"</span><span class="p">)</span>
-<span class="n">blueberryZone</span><span class="o">.</span><span class="n">onEnterAction</span> <span class="o">=</span> <span class="p">{</span> <span class="n">attachment</span> <span class="k">in</span>
-    <span class="nf">print</span><span class="p">(</span><span class="s">"Entered near range of 'desk':'blueberry'. Attachment payload: (attachment.payload)"</span><span class="p">)</span>
-<span class="p">}</span>
-<span class="n">blueberryZone</span><span class="o">.</span><span class="n">onExitAction</span> <span class="o">=</span> <span class="p">{</span> <span class="n">attachment</span> <span class="k">in</span>
-    <span class="nf">print</span><span class="p">(</span><span class="s">"Exited near range of 'desk':'blueberry'. Attachment payload: (attachment.payload)"</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="c1">// ... etc. You can define as many zones as you need.</span>
-
-<span class="c1">// Start proximity observation</span>
-<span class="k">self</span><span class="o">.</span><span class="n">observer</span><span class="o">.</span><span class="nf">startObserving</span><span class="p">([</span><span class="n">blueberryZone</span><span class="p">])</span>
+<p>or execute </p>
+<pre class="highlight plaintext"><code>git submodule init --update
 </code></pre>
-<h3 id='background-support' class='heading'>Background support</h3>
 
-<p>To allow your app to react to physical context when it&rsquo;s in the background:</p>
+<p>before building.</p>
+
+<p>The schemes in the <a href="ProximitySDK.xcworkspace">workspace</a> are:</p>
 
 <ul>
-<li>Set <em>Uses Bluetooth LE accessories</em> in your Xcode project settings -&gt; <em>Capabilities</em> -&gt; <em>Background Modes</em>. It&rsquo;s required for Core Bluetooth to work in the background.</li>
-<li>Add a value for <em>Privacy - Location Always Usage Description</em> key in your app&rsquo;s Info.plist file. It will be the message of an alert that will be shown to the user when the app calls <code>-[EPXProximityObserver start...]</code>. It&rsquo;s required for Core Location to work.</li>
+<li><strong>EstimoteProximitySDK</strong> — the dynamic framework target with SDK code.</li>
+<li><strong>EstimoteProximitySDKTests</strong> — test target with all tests (both unit and integration).</li>
+<li><strong>UnitTests</strong> — scheme for <em>EstimoteProximitySDKTests</em> target with integration tests disabled. Because it contains unit tests only, it&rsquo;s very fast to run (~1s). Use it in day-to-day development.</li>
+<li><strong>IntegrationTests</strong> — scheme for <em>EstimoteProximitySDKTests</em> target with unit tests tests disabled. It takes more than 30s to run, as it replays long datasets.</li>
+<li><strong>FatFramework</strong> — an aggregate target that runs <a href="EstimoteProximitySDK/BuildScripts">build scripts</a> to produce a framework that can be published. To execute them, simply select the scheme and trigger <em>Build</em> (cmd + B). When the scripts are executing, their intermediate artifacts are put to <em>EstimoteProximitySDK/build</em>. When they&rsquo;re done, the built framework is present in <em>EstimoteProximitySDK/Output-EstimoteProximitySDK-Release</em>.</li>
+<li><strong>ProximitySample</strong> — an internal app target that can be used to check how Proximity SDK works on a real device. Feel free to modify it and commit changes.</li>
 </ul>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<ol>
+<li>Create a new branch according to our <a href="https://github.com/Estimote/styleguide/blob/master/iOS%20Guidelines/Git.md">git guidelines</a>.</li>
+<li>Write an automated test (start with unit tests!). You don&rsquo;t want to manually test your feature before each future release, trust me on this one.</li>
+<li>Implement your functionality.</li>
+<li>Create a pull request and assign somebody from iOS Guild. Also ping the reviewer on Slack.</li>
+</ol>
+<h2 id='releasing' class='heading'>Releasing</h2>
+
+<p>Refer to <a href="ReleaseProcess.md">ReleaseProcess</a> document.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Estimote</a>. All rights reserved. (Last updated: 2018-03-08)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Estimote</a>. All rights reserved. (Last updated: 2018-03-22)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
