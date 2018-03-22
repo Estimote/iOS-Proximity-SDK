@@ -8,8 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.11.2] - 2018-03-14
 
-### Fixed
-- Fixed the SourceKit issues in Swift example mentioned in [bug report](https://github.com/Estimote/iOS-Proximity-SDK/issues/5).
+### Changed
+- Changed rules for post processing private headers when building framework to partially resolve SourceKit issues in Swift example mentioned in [bug report](https://github.com/Estimote/iOS-Proximity-SDK/issues/5).
 
 
 ## [0.11.1] - 2018-03-06
