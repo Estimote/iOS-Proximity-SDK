@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+## [0.11.3] - 2018-03-22
+
+### Changed
+- Private headers are no longer processed when building framework. This has a potential to resolve SourceKit issues in Swift example mentioned in [bug report](https://github.com/Estimote/iOS-Proximity-SDK/issues/5).
+
+
 ## [0.11.2] - 2018-03-14
 
 ### Changed
