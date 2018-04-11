@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+## [0.12.0] - 2018-04-11
+
+### Fixed
+- Fixed a bug with ABI (binary-level) changes in Swift 4.1 mentioned in [bug report](https://github.com/Estimote/iOS-Proximity-SDK/issues/7).
+
+
 ## [0.11.3] - 2018-03-22
 
 ### Changed
