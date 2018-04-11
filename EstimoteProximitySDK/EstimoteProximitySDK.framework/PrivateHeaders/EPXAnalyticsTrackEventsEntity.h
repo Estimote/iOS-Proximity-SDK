@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Represents a row in 'analytics_track_events' table in database created by EPXPersistentAnalyticsRepository.
  */
-@interface EPXAnalyticsTrackEventsEntity : NSObject
+@interface EPXAnalyticsTrackEventsEntity : NSObject <NSCopying>
 
 /**
  Packet type powering algorithm that analytics tracks (i.e. Estimote Location for Estimote Monitoring).
