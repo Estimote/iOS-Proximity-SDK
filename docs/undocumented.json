@@ -1,110 +1,110 @@
 {
   "warnings": [
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
       "line": 20,
       "symbol": "EPXProximityObserverErrorDomain",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
       "line": 28,
       "symbol": "EPXProximityObserverError.EPXProximityObserverErrorUnknown",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
       "line": 31,
       "symbol": "EPXProximityObserverError.EPXProximityObserverErrorFetchingAttachmentsFailed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
       "line": 34,
       "symbol": "EPXProximityObserverError.EPXProximityObserverErrorBluetoothUnsupported",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
       "line": 37,
       "symbol": "EPXProximityObserverError.EPXProximityObserverErrorBluetoothOff",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserver.h",
       "line": 40,
       "symbol": "EPXProximityObserverError.EPXProximityObserverErrorMotionDetectionFailed",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
       "line": 21,
       "symbol": "EPXLogLevel.EPXLogLevelNone",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
       "line": 24,
       "symbol": "EPXLogLevel.EPXLogLevelError",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
       "line": 27,
       "symbol": "EPXLogLevel.EPXLogLevelWarning",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityObserverConfiguration.h",
       "line": 30,
       "symbol": "EPXLogLevel.EPXLogLevelInfo",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityRange.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityRange.h",
       "line": 80,
       "symbol": "EPXProximityRange.-isEqualToRange:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityRange.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityRange.h",
       "line": 81,
       "symbol": "EPXProximityRange.-isEqual:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityRange.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EPXProximityRange.h",
       "line": 82,
       "symbol": "EPXProximityRange.-hash",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EstimoteProximitySDK.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EstimoteProximitySDK.h",
       "line": 15,
       "symbol": "EstimoteProximitySDKVersionNumber",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EstimoteProximitySDK.h",
+      "file": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/Products/EstimoteProximitySDK.framework/Headers/EstimoteProximitySDK.h",
       "line": 18,
       "symbol": "EstimoteProximitySDKVersionString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/alex_esti/Code/iOS-Proximity-SDK-Source"
+  "source_directory": "/Users/bartlomiejolma/iOS-Proximity-SDK-Source/EstimoteProximitySDK/BuildScripts"
 }
