@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.13.0] - 2018-05-09
+
+### Added
+- Estimote Monitoring is supporting pagination. Previously you could fetch only up to 100 attachments.
+- Local persistance for cloud attachments. Now the `EPXProximityObserver` will fetch data from the cloud on every `startObserving()` if the network is available. If not, it will use the locally persisted data. This way you can start scan without the internet access, provided that you have launched it at least once when network was available.
 
 ## [0.12.0] - 2018-04-11
 

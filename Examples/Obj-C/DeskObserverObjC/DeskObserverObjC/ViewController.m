@@ -66,7 +66,7 @@
     // TODO: The demo assumes proper settings configuration in Estimote Cloud. Make sure that:
     // - you have at least 2 beacons assigned to your Estimote Cloud account
     // - one of the beacons has an attachment `{"desk":"blueberry","venue":"office"}`
-    // - another beacon has an attachment `{"desk":"blueberry","venue":"office"}`
+    // - another beacon has an attachment `{"desk":"mint","venue":"office"}`
     
     self.proximityObserver = [[EPXProximityObserver alloc] initWithCredentials:credentials errorBlock:^(NSError * _Nonnull error) {
         NSLog(@"Ooops! %@", error);
