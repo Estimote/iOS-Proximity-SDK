@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  Constructs NSError object with domain, code and user info with proper keys.
  */
-- (NSError *)makeErrorWithDomain:(NSString *)domain
++ (NSError *)makeErrorWithDomain:(NSString *)domain
                             code:(NSInteger)code
                      description:(nullable NSString *)description
                         recovery:(nullable NSString *)recovery
