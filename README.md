@@ -32,7 +32,7 @@ Note: this project was previously known as [Estimote SDK 5.0.0](https://github.c
 
 1. Download Proximity SDK repository
     - Click the "Download ZIP" button in this repo, or
-    - Run `git clone git@github.com:Estimote/iOS-SDK-Proximity-SDK.git --depth=1`
+    - Run `git clone git@github.com:Estimote/iOS-Proximity-SDK.git --depth=1`
 
 1. Download Bluetooth Scanning library repo
     - Click the "Download ZIP" button in [Bluetooth Scanning repo](https://github.com/Estimote/iOS-Bluetooth-Scanning), or
