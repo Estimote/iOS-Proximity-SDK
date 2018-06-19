@@ -18,7 +18,7 @@ Other Proximity SDK highlights include:
 - [Use it in your app](#use-it-in-your-app)
     - [Setting up tags](#setting-up-tags)
     - [Inside your app](#inside-your-app)
-- [(Optional) Adding attachments to your beacons](#adding-attachments-to-your-beacons)
+- [(Optional) Adding attachments to your beacons](#optional-adding-attachments-to-your-beacons)
 - [Location permissions and Background support](#location-permissions-and-background-support)
 - [Additional features](#additional-features)
 - [Example app](#example-app)
@@ -67,14 +67,8 @@ Below there's a presentation of two zones:
 
 ### Manual
 1. Download Proximity SDK repository
-<<<<<<< Updated upstream
     - Click the "Download ZIP" button in this repo, or
     - Run `git clone git@github.com:Estimote/iOS-Proximity-SDK.git --depth=1`
-
-=======
-    - Click the _Download ZIP_ button in this repo, or
-    - Run `git clone git@github.com:Estimote/iOS-SDK-Proximity-SDK.git --depth=1`
->>>>>>> Stashed changes
 1. Download Bluetooth Scanning library repo
     - Click the _Download ZIP_ button in [Bluetooth Scanning repo](https://github.com/Estimote/iOS-Bluetooth-Scanning), or
     - Run `git clone git@github.com:Estimote/iOS-Bluetooth-Scanning.git --depth=1`
@@ -171,7 +165,7 @@ To allow our app to run in the background when in range of beacons, **enable the
 
 ## Additional features
 ### Caching data for limited internet connection use cases 
-+Since the version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0) the ProximityObserver will persist necessary data locally, so that when there is no internet access, it may still be able to do proximity observation using that data. The only need is to call `startObserving()` on `EPXProximityObserver` instance at least once when the internet connection is available - it will fetch all the necessary data from the Estimote Cloud, and will store them locally for the later use.
+Since the version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0) the ProximityObserver will persist necessary data locally, so that when there is no internet access, it may still be able to do proximity observation using that data. The only need is to call `startObserving()` on `EPXProximityObserver` instance at least once when the internet connection is available - it will fetch all the necessary data from the Estimote Cloud, and will store them locally for the later use.
 
 ## Example app
 The demo requires at least two Proximity or Location beacons configured for Estimote Monitoring with tags:
@@ -186,7 +180,7 @@ To get a working prototype, check out the [Desk Observer](Examples/Swift/DeskObs
 - when you are in the venue in general.
 
 ## Documentation
->TBD
+[Here](https://github.com/Estimote/iOS-Proximity-SDK/tree/master/docs) you will find documentation.
 
 ## Your feedback and questions
 At Estimote we're massive believers in feedback! Here are some common ways to share your thoughts with us:
