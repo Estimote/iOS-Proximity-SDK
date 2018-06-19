@@ -17,47 +17,36 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Encapsulates decision making on whether an attachment fits a given zone, or whether attachment insertion/removal
+ Encapsulates decision making on whether a tag fits a given zone, or whether tag insertion/removal
  should trigger callbacks.
  */
 @interface EPXProximityZoneEngine : NSObject
 
 /**
- Decide whether the provided attachment matches zone's predicate (payload attachment key, value pair).
+ Decides whether the provided tag matches given zone.
 
- @param attachment Attachment to be tested.
+ @param tag Tag to be tested.
  @param zone Zone to be tested against.
- @return YES if attachment payload contains value defined in zone for key defined in zone.
+ @return YES if tag matches the tag provided with the zone.
  */
-- (BOOL)attachment:(EPXDeviceAttachment *)attachment matchesZone:(EPXProximityZone *)zone;
+- (BOOL)tag:(NSString *)tag matchesZone:(EPXProximityZone *)zone;
 
 /**
- Descide whether inserting attachment should trigger "enter" monitoring callback.
+ Decides whether inserting new tag should trigger an enter callback.
 
- @param attachmentsInside Set of device attachment inside zone before insertion.
- @return YES if attachmentsInside contains no entries.
+ @param tagsInside Set of tags inside zone before insertion.
+ @return YES if tagsInside contains no entries.
  */
-- (BOOL)insertionToAttachmentsSetShouldTriggerEnter:(NSSet<EPXDeviceAttachment *> *)attachmentsInside;
+- (BOOL)insertionToTagsSetShouldTriggerEnter:(NSSet<NSString *> *)tagsInside;
 
 /**
- Decide whether removing attachment should trigger "exit" monitoring callback.
+ Decides whether removing tag should trigger an exit callback.
 
- @param attachmentToRemove Attachment to check.
- @param attachmentsInside Set of attachments inside zone before removal.
- @return YES if attachmentsInside contains exactly one object and it's equal to `attachmentToRemove`. NO otherwise.
+ @param tagToRemove Tag to be removed from collection.
+ @param tagsInside Set of tags inside zone before removal.
+ @return YES if tagsInside contains exactly one object and it's equal to `tagToRemove`.
  */
-- (BOOL)shouldTriggerExitWhenRemovingAttachment:(EPXDeviceAttachment *)attachmentToRemove
-                             fromAttachmentsSet:(NSSet<EPXDeviceAttachment *> *)attachmentsInside;
-
-/**
- Check which attachments match provided zone and return their identifiers.
-
- @param attachments Array of attachments.
- @param zone Zone to filter attachments against.
- @return Array of identifiers.
- */
-- (NSArray<NSString *> *)identifiersFromAttachments:(NSArray<EPXDeviceAttachment *> *)attachments
-                                       matchingZone:(EPXProximityZone *)zone;
+- (BOOL)shouldTriggerExitWhenRemovingTag:(NSString *)tagToRemove fromTagsSet:(NSSet<NSString *> *)tagsInside;
 
 @end
 

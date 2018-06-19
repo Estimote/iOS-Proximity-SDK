@@ -9,7 +9,7 @@
 //  Copyright © 2017 Estimote. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 //! Project version number for EstimoteProximitySDK.
 FOUNDATION_EXPORT double EstimoteProximitySDKVersionNumber;
@@ -25,3 +25,4 @@ FOUNDATION_EXPORT const unsigned char EstimoteProximitySDKVersionString[];
 #import "EPXProximityRange.h"
 #import "EPXCloudCredentials.h"
 #import "EPXDeviceAttachment.h"
+#import "EPXProximityZoneContext.h"

@@ -13,28 +13,27 @@
 
 @class EPXProximityZone;
 @class EPXProximityZoneEngine;
-@class EPXDeviceAttachment;
+@protocol EPXProximityZoneContext;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol EPXProximityZoneAttachmentStore <NSObject>
+@protocol EPXProximityZoneContextStore <NSObject>
 
 /**
  Proximity zone this object wraps and holds state for.
  */
 @property (nonatomic, strong, readonly) EPXProximityZone *proximityZone;
 
-- (void)insertDeviceAttachment:(EPXDeviceAttachment *)deviceAttachment;
-- (void)removeDeviceAttachment:(EPXDeviceAttachment *)deviceAttachment;
+- (void)insertZoneContext:(id<EPXProximityZoneContext>)context;
+- (void)removeZoneContext:(id<EPXProximityZoneContext>)context;
 
 @end
-
 
 /**
  Wraps a Proximity Zone to hold state of devices that are currently inside the zone (`deviceAttachmentsInside`).
  Additionally, allows to insert a device to the zone or remove it. Calls zone's registered callback if needed.
  */
-@interface EPXProximityZoneStateChangeObserver : NSObject <EPXProximityZoneAttachmentStore>
+@interface EPXProximityZoneStateChangeObserver : NSObject <EPXProximityZoneContextStore>
 
 /**
  Proximity zone this object wraps and holds state for.
@@ -49,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Set of device attachments that are currently inside the zone.
  */
-@property (nonatomic, strong, readonly) NSSet<EPXDeviceAttachment *> *deviceAttachmentsInside;
+@property (nonatomic, strong, readonly) NSSet<id<EPXProximityZoneContext>> *zoneContextsInside;
 
 /**
  Init is unavailable.
@@ -70,24 +69,20 @@ NS_ASSUME_NONNULL_BEGIN
                       engine:(EPXProximityZoneEngine *)engine NS_DESIGNATED_INITIALIZER;
 
 /**
- Check whether the attachment passes the zone's predicate (payload attachment key, value pair), inserts it into
- `deviceAttachmentsInside` set and calls `proximityZone`'s callbacks if necessary. Asks `engine` to decide whether
- enter/exit/change callbacks should happen.
+ Check whether provided zone's context matches the zone, inserts it into `zoneContextsInside` set and calls `proximityZone`'s callbacks if necessary.
+ Asks `engine` to decide whether enter/exit/change callbacks should happen.
 
- @param attachment Attachment to be inserted.
+ @param context Attachment to be inserted.
  */
-- (void)insertDeviceAttachmentAndCallHandlerIfNeeded:(EPXDeviceAttachment *)attachment;
-
-
+- (void)insertZoneContextAndCallHandlerIfNeeded:(id<EPXProximityZoneContext>)context;
 
 /**
- Check whether the attachment passes the zone's predicate (payload attachment key, value pair), inserts it into
- `deviceAttachmentsInside` set and calls `proximityZone`'s callbacks if necessary. Asks `engine` to decide whether
- enter/exit/change callbacks should happen.
+ Check whether provided zone's context matches the zone, removes it from `zoneContextsInside` set and calls `proximityZone`'s callbacks if necessary.
+ Asks `engine` to decide whether enter/exit/change callbacks should happen.
 
- @param attachment Attachment to be removed.
+ @param context Attachment to be removed.
  */
-- (void)removeDeviceAttachmentAndCallHandlerIfNeeded:(EPXDeviceAttachment *)attachment;
+- (void)removeZoneContextAndCallHandlerIfNeeded:(id<EPXProximityZoneContext>)context;
 
 @end
 

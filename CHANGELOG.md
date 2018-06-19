@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+## [0.14.0] - 2018-06-19
+>**Warning: Breaking changes - new, tag based API!**
+
+### Added:
+- Protocol `EPXProximityZoneContext`, a bundle of device identifier, and assigned to it tag and list of attachments.
+
+### Changed:
+- Initializing `EPXProximityZone` with `tag` and `range` (instead of previous attachment's key-value pair and range).
+- `EPXProximityZone`'s callbacks return `EPXProximityZoneContext`-compliant objects (instead of previous `EPXProximityDeviceAttachment`).
+
+### Removed:
+- previous attachment-based API is removed (not deprecated!), please read carefully [this](https://github.com/Estimote/iOS-Proximity-SDK/blob/master/README.md).
+
 ## [0.13.1] - 2018-05-15
 ### Fixed
 - Fixed `EPXTimerAnalyticsHeartbeatGenerator` crash ([issue](https://github.com/Estimote/iOS-Proximity-SDK/issues/12)).
