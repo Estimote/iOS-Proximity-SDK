@@ -73,7 +73,7 @@ Below there's a presentation of two zones:
     - Click the _Download ZIP_ button in [Bluetooth Scanning repo](https://github.com/Estimote/iOS-Bluetooth-Scanning), or
     - Run `git clone git@github.com:Estimote/iOS-Bluetooth-Scanning.git --depth=1`
 1. Drag & drop [EstimoteProximitySDK.framework](EstimoteProximitySDK/EstimoteProximitySDK.framework) to your project (enable the checkbox in _Options_ > _Copy files if needed_)
-1. Drag & drop [EstimoteBluetoothScanning.framework](EstimoteProximitySDK/EstimoteBluetoothScanning.framework) to your project (enable the checkbox in _Options_ > _Copy files if needed_)
+1. Drag & drop _EstimoteBluetoothScanning.framework_ to your project (enable the checkbox in _Options_ > _Copy files if needed_)
 1. Add Estimote Proximity SDK to your Xcode project's _Build Phases_ > _Embed Frameworks_. If this build phase isn't visible you can add the SDK in _General_ -> _Embedded Binaries_ section.
 1. Add Estimote Bluetooth Scanning library to your Xcode project's _Build Phases_ > _Embed Frameworks_. If this build phase isn't visible you can add the SDK in _General_ -> _Embedded Binaries_ section.
 1. Make sure _Always Embed Swift Standard Libraries_ build setting is set to **Yes** (this option is turned off by default for Objective–C projects). Estimote Proximity SDK contains Swift code internally and requires Swift standard libraries in the app bundle.
@@ -174,7 +174,7 @@ The demo requires at least two Proximity or Location beacons configured for Esti
 >**Note**:
 >Estimote Monitoring is enabled by default in dev kits shipped after mid-September 2017. In order to enable it on your own check out the [instructions](https://community.estimote.com/hc/en-us/articles/226144728-How-to-enable-Estimote-Monitoring-).
 
-To get a working prototype, check out the [Desk Observer](Examples/Swift/DeskObserver) example app. It's a single screen app with three labels that change background color:
+To get a working prototype, check out the Desk Observer app - [Swift](Examples/Swift/DeskObserver) or [Objective-C](Examples/Obj-C/DeskObserverObjC) version. It's a single screen app with three labels that change background color:
 - when you are in close proximity to the first desk, 
 - in close proximity to the second desk, 
 - when you are in the venue in general.
