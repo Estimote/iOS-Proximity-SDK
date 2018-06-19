@@ -135,7 +135,7 @@ self.observer.startObserving([blueberryZone])
 
 ### (Optional) Adding attachments to your beacons
 While zone identification is based on tags, attachments are a way to add additional content to a beacon and a zone it defines. Think of it as a custom backend where you can assign any additional data to a particular beacon.
-All attachments assigned to a beacon will be available in `id<EPXproximityZoneContext>` object returned in action's callback. See [EPXProximityZone](https://github.com/Estimote/iOS-Proximity-SDK-Source/blob/feature/tags_readme/EstimoteProximitySDK/EstimoteProximitySDK/PublicClasses/EPXProximityRange.h) for more details.
+All attachments assigned to a beacon will be available in `id<EPXproximityZoneContext>` object returned in action's callback. See [EPXProximityZone](EstimoteProximitySDK/EstimoteProximitySDK.framework/Headers/EPXProximityZone.h) for more details.
 
 To conifgure the attachments:
 1. Go to https://cloud.estimote.com/#/
