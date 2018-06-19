@@ -27,6 +27,9 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
      * https://forums.estimote.com, using contact@estimote.com or filing an issue on Github. */
     EPXProximityObserverErrorUnknown = 0,
 
+    /* Fetching tags from Cloud failed. */
+    EPXProximityObserverErrorFetchingTagsFailed,
+    
     /* Fetching attachments from Cloud failed. */
     EPXProximityObserverErrorFetchingAttachmentsFailed,
 
