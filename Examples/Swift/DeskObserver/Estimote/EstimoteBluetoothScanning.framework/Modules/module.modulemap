@@ -1,6 +1,0 @@
-framework module EstimoteBluetoothScanning {
-  umbrella header "EstimoteBluetoothScanning.h"
-
-  export *
-  module * { export * }
-}
