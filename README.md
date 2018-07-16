@@ -8,7 +8,7 @@ Stick an Estimote Beacon at your desk, in your car, or on a package, and the Est
 Other Proximity SDK highlights include:
 
 1. **Tag-based identification:** define your proximity zones with human-readable tags instead of abstract identifiers.
-2. **Multiple zones per beacon:** set up more than one enter/exit zone per single beacon. (e.g., a “close” zone and a “far” zone)
+2. **Multiple zones per beacon:** set up more than one enter/exit zone per single beacon. (e.g., a “near” zone and a “far” zone)
 3. **Software-defined range:** define the enter/exit trigger range in code, rather than by the beacon’s broadcasting power.
 4. **Cloud-based tagging & grouping:** add, remove, and replace beacons, without changing the app’s code - just modify the tags in Estimote Cloud.
 
@@ -18,7 +18,7 @@ Other Proximity SDK highlights include:
 - [Use it in your app](#use-it-in-your-app)
     - [Setting up tags](#setting-up-tags)
     - [Inside your app](#inside-your-app)
-- [(Optional) Adding attachments to your beacons](#optional-adding-attachments-to-your-beacons)
+- [(Optional) Adding attachments to your beacons](#adding-attachments-to-your-beacons)
 - [Location permissions and Background support](#location-permissions-and-background-support)
 - [Additional features](#additional-features)
 - [Example app](#example-app)
@@ -28,7 +28,7 @@ Other Proximity SDK highlights include:
 
 ## Tag-based identification
 Estimote Proximity SDK uses tag-based identification to allow for dynamic setup changes.
-You monitor beacons by tags, which you assign in Estimote Cloud. For example, instead of saying 
+You monitor beacons by tags, which you assign in Estimote Cloud. For example, instead of saying:
 >"monitor for beacon 123 and beacon 456"
 
 you say: 
@@ -36,15 +36,15 @@ you say:
 >"monitor for beacons tagged as lobby". 
 
 This way, if you need to replace or add more beacons to the lobby, you just add/change tags in Estimote Cloud. Your app will pick up the new setup the next time the `EPXProximityObserver` is started.
->**Note!**
->As our SDK is still in version 0.x.x, we're constantly modifying our API according to your feedback. Our latest iteration has evoloved our SDK to be based on simple tags, backed up with attachments as an optional additional information. Since version 0.14.0 creating zones based on attachments and using `EPXDeviceAttachment` from zone's callbacks is not available.
+>**Important!**
+>As our SDK is still in version 0.x.x, we're constantly modifying our API according to your feedback. Our latest iteration has evoloved our SDK to be based on simple tags, backed up with attachments as an optional additional information. 
 
 ### Key components
 Estimote Proximity SDK is built on top of three key components: _observer_, _zone_, and _zone's context_. If you used previous versions of Proximity SDK you should be familiar with all of them except last one.
 - _Observer_ - responsible for starting and stopping monitoring for a provided list of zones,
 - _Zone_ - a representation for a physical space combining group of beacons with same _tag_.
-- _Zone’s context (Proximity Context)_ - a combination of a single beacon with its tag and list of attachments assigned to it.
-- _Action (callbacks)_ - every _zone_ has three types of callbacks triggered when you: enter a _zone's context_, exit it, or number of heard _contexts_ changes.
+- _Zone’s context_ - a combination of a single beacon with its tag and list of attachments assigned to it.
+- _Actions (callbacks)_ - every _zone_ has three types of callbacks triggered when you: enter a _zone's context_, exit it, or number of heard _contexts_ changes.
 
 Below there's a presentation of two zones:
 - `blueberry` zone with two _zone's contexts_,
@@ -67,13 +67,13 @@ Below there's a presentation of two zones:
 
 ### Manual
 1. Download Proximity SDK repository
-    - Click the "Download ZIP" button in this repo, or
-    - Run `git clone git@github.com:Estimote/iOS-Proximity-SDK.git --depth=1`
+    - Click the _Download ZIP_ button in this repo, or
+    - Run `git clone git@github.com:Estimote/iOS-SDK-Proximity-SDK.git --depth=1`
 1. Download Bluetooth Scanning library repo
     - Click the _Download ZIP_ button in [Bluetooth Scanning repo](https://github.com/Estimote/iOS-Bluetooth-Scanning), or
     - Run `git clone git@github.com:Estimote/iOS-Bluetooth-Scanning.git --depth=1`
 1. Drag & drop [EstimoteProximitySDK.framework](EstimoteProximitySDK/EstimoteProximitySDK.framework) to your project (enable the checkbox in _Options_ > _Copy files if needed_)
-1. Drag & drop _EstimoteBluetoothScanning.framework_ to your project (enable the checkbox in _Options_ > _Copy files if needed_)
+1. Drag & drop [EstimoteBluetoothScanning.framework](EstimoteProximitySDK/EstimoteBluetoothScanning.framework) to your project (enable the checkbox in _Options_ > _Copy files if needed_)
 1. Add Estimote Proximity SDK to your Xcode project's _Build Phases_ > _Embed Frameworks_. If this build phase isn't visible you can add the SDK in _General_ -> _Embedded Binaries_ section.
 1. Add Estimote Bluetooth Scanning library to your Xcode project's _Build Phases_ > _Embed Frameworks_. If this build phase isn't visible you can add the SDK in _General_ -> _Embedded Binaries_ section.
 1. Make sure _Always Embed Swift Standard Libraries_ build setting is set to **Yes** (this option is turned off by default for Objective–C projects). Estimote Proximity SDK contains Swift code internally and requires Swift standard libraries in the app bundle.
@@ -105,25 +105,29 @@ To conifgure the tags:
 
 ### Inside your app
 To use the SDK within your app, go to the [apps section](https://cloud.estimote.com/#/apps) in Estimote Cloud. Register a new app or use one of the available templates to obtain App ID & App Token credentials pair.
-In your app, set up the credentials using `EPXCloudCredentials`:
+In your app, set up the credentials using `CloudCredentials`:
 ```swift
-let credentials = EPXCloudCredentials(appID: "your-app-id", appToken: "your-app-token")
+let credentials = CloudCredentials(appID: "your-app-id", appToken: "your-app-token")
 ```
-Then, configure proximity discovery with `EPXProximityObserver`. For more info on tags, see [this section](#tag-based-identification) or [documentation](#documentation).
+Then, configure proximity discovery with `ProximityObserver`. For more info on tags, see [this section](#tag-based-identification) or [documentation](#documentation).
 ```swift
 // Create observer instance
-self.proximityObserver = EPXProximityObserver(credentials: credentials, errorBlock: { error in
-    print("Ooops! \(error)")
+self.proximityObserver = EPXProximityObserver(credentials: credentials, onError: { error in
+print("Ooops! \(error)")
 })
 
 // Define zones
-let blueberryZone = EPXProximityZone(range: EPXProximityRange.near,
-                                     tag: "blueberry")
-blueberryZone.onEnterAction = { zoneContext in
-    print("Entered near range of tag 'blueberry'. Attachments payload: (zoneContext.attachments)")
+let blueberryZone = ProximityZone(range: ProximityRange.near,
+                                    tag: "blueberry")
+blueberryZone.onEnter = { zoneContext in
+    print("Entered near range of tag 'blueberry'. Attachments payload: \(zoneContext.attachments)")
 }
-blueberryZone.onExitAction = { zoneContext in
-    print("Exited near range of tag 'blueberry'. Attachment payload: (zoneContext.attachments)")
+blueberryZone.onExit = { zoneContext in
+    print("Exited near range of tag 'blueberry'. Attachment payload: \(zoneContext.attachments)")
+}
+
+blueberryZone.onContextChange = { contexts in
+    print("Now in range of \(contexts.count) contexts")
 }
 
 // ... etc. You can define as many zones as you need.
@@ -135,7 +139,7 @@ self.observer.startObserving([blueberryZone])
 
 ### (Optional) Adding attachments to your beacons
 While zone identification is based on tags, attachments are a way to add additional content to a beacon and a zone it defines. Think of it as a custom backend where you can assign any additional data to a particular beacon.
-All attachments assigned to a beacon will be available in `id<EPXproximityZoneContext>` object returned in action's callback. See [EPXProximityZone](EstimoteProximitySDK/EstimoteProximitySDK.framework/Headers/EPXProximityZone.h) for more details.
+All attachments assigned to a beacon will be available in `EPXproximityZoneContext` objects returned in action's callback. See [EPXProximityZone](https://github.com/Estimote/iOS-Proximity-SDK-Source/blob/feature/tags_readme/EstimoteProximitySDK/EstimoteProximitySDK/PublicClasses/EPXProximityRange.h) for more details.
 
 To conifgure the attachments:
 1. Go to https://cloud.estimote.com/#/
@@ -150,14 +154,14 @@ To conifgure the attachments:
 ![](readme_images/adding_attachments.png)
 
 <p align="center">
-    <i>Assigning beacon attachments</i>
+<i>Assigning beacon attachments</i>
 </p>
 
 ## Location permissions and Background support 
 
 Proximity SDK requires Location Services to work in the background, which means you need to ask users to allow the app to access their location. To do that, **set up the Location Services usage description**:
 
-- Add a value for _Privacy - Location Always Usage Description_ key in your app's Info.plist file. This message will be shown to the user when the app calls `-[EPXProximityObserver start...]`. It's ***required*** for Core Location to work.
+- Add a value for _Privacy - Location Always Usage Description_ key in your app's Info.plist file. This message will be shown to the user when the app calls `ProximityObserver.startObserving(...)`. It's ***required*** for Core Location to work.
 
 To allow our app to run in the background when in range of beacons, **enable the Bluetooth Background Mode**:
 
@@ -165,19 +169,17 @@ To allow our app to run in the background when in range of beacons, **enable the
 
 ## Additional features
 ### Caching data for limited internet connection use cases 
-Since the version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0) the ProximityObserver will persist necessary data locally, so that when there is no internet access, it may still be able to do proximity observation using that data. The only need is to call `startObserving()` on `EPXProximityObserver` instance at least once when the internet connection is available - it will fetch all the necessary data from the Estimote Cloud, and will store them locally for the later use.
+Since the version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0) the ProximityObserver will persist necessary data locally, so that when there is no internet access, it may still be able to do proximity observation using that data. The only need is to call `ProximityObserver.startObserving([zone1,...])` instance at least once when the internet connection is available - it will fetch all the necessary data from the Estimote Cloud, and will store them locally for the later use.
 
-## Example app
-The demo requires at least two Proximity or Location beacons configured for Estimote Monitoring with tags:
-- `blueberry` and `office` for the first one,
-- `mint` and `office` for the second one.
->**Note**:
->Estimote Monitoring is enabled by default in dev kits shipped after mid-September 2017. In order to enable it on your own check out the [instructions](https://community.estimote.com/hc/en-us/articles/226144728-How-to-enable-Estimote-Monitoring-).
+## Example apps
 
-To get a working prototype, check out the Desk Observer app - [Swift](Examples/Swift/DeskObserver) or [Objective-C](Examples/Obj-C/DeskObserverObjC) version. It's a single screen app with three labels that change background color:
-- when you are in close proximity to the first desk, 
-- in close proximity to the second desk, 
-- when you are in the venue in general.
+To get a working prototype, download a [ready-made app template](https://cloud.estimote.com/#/apps/add) in the Estimote Cloud. 
+App ID & App Token credentials are generated automatically.
+
+- Use [Proximity](https://cloud.estimote.com/#/apps/add/proximity-content-multiple) to run a simple demo in the foreground.
+- Use [Notification](https://cloud.estimote.com/#/apps/add/notification) to run a demo in the background and display notifications.
+
+Demos require Estimote Beacons [configured with Estimote Monitoring](https://community.estimote.com/hc/en-us/articles/226144728-How-to-enable-Estimote-Monitoring)
 
 ## Documentation
 [Here](https://github.com/Estimote/iOS-Proximity-SDK/tree/master/docs) you will find documentation.
