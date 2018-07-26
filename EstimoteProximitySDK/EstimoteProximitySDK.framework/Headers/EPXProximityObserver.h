@@ -17,7 +17,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-FOUNDATION_EXPORT NSString * const EPXProximityObserverErrorDomain;
+FOUNDATION_EXPORT NSString *const EPXProximityObserverErrorDomain;
 
 /**
  Possible errors invoked with Proximity Observer's error block.
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
 
     /* Fetching tags from Cloud failed. */
     EPXProximityObserverErrorFetchingTagsFailed,
-    
+
     /* Fetching attachments from Cloud failed. */
     EPXProximityObserverErrorFetchingAttachmentsFailed,
 
@@ -41,12 +41,16 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
 
     /* Couldn't use motion detection. */
     EPXProximityObserverErrorMotionDetectionFailed,
+    
+    /* Core Location Services interferred with monitoring */
+    EPXProximityObserverErrorMonitoringNotPermitted
 };
 
 /**
- Observes and reports proximity of Estimote devices. 
+ Observes and reports proximity of Estimote devices.
  Uses Estimote Monitoring under the hood. Encapsulates it under tag-based beacon identification and callback blocks.
  */
+NS_SWIFT_NAME(ProximityObserver)
 @interface EPXProximityObserver : NSObject
 
 /**
@@ -57,7 +61,7 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
 /**
  New is disabled for this class.
  */
-+ (instancetype)new NS_UNAVAILABLE;
++ (instancetype) new NS_UNAVAILABLE;
 
 /**
  Convenience initializer. Calls designated initializer with default configuration.
@@ -65,8 +69,7 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
  @param errorBlock Block invoked whenever error occurs. The parameter is an NSError object, with
                    domain equal to EPXProximityObserverErrorDomain and code from EPXProximityObserverError enum.
  */
-- (instancetype)initWithCredentials:(EPXCloudCredentials *)credentials
-                         errorBlock:(void (^)(NSError *error))errorBlock;
+- (instancetype)initWithCredentials:(EPXCloudCredentials *)credentials onError:(void (^)(NSError *error))errorBlock;
 
 /**
  Designated initializer.
@@ -77,7 +80,7 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
  */
 - (instancetype)initWithCredentials:(EPXCloudCredentials *)credentials
                       configuration:(EPXProximityObserverConfiguration *)configuration
-                         errorBlock:(void (^)(NSError *error))errorBlock;
+                            onError:(void (^)(NSError *error))errorBlock;
 
 /**
  Start observing and calling callbacks on provided proximity zones:
@@ -89,7 +92,7 @@ typedef NS_ENUM(NSUInteger, EPXProximityObserverError) {
 
  Note: at the moment, Proximity SDK supports monitoring only 100 devices per zone. If more devices have their attachments
  matching the key, value defined in the zone, the first 100 are monitored.
- 
+
  @param zones Zones to be observed.
  */
 - (void)startObservingZones:(NSArray<EPXProximityZone *> *)zones;

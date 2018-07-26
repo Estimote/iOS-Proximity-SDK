@@ -13,13 +13,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class EPXDeviceAttachment;
-
-NS_SWIFT_NAME(ProximityZoneContext)
 /**
  Interface providing all contextual data about a Proximity Zone.
  */
-@protocol EPXProximityZoneContext <NSObject>
+NS_SWIFT_NAME(ProximityZoneContext)
+@interface EPXProximityZoneContext: NSObject
 
 /**
  Identifier of a device that is the zone's source.
@@ -32,7 +30,22 @@ NS_SWIFT_NAME(ProximityZoneContext)
 /**
  Dictionary of attachments assigned in Cloud to that zone's source.
  */
-@property (nonatomic, readonly, nullable) NSArray<EPXDeviceAttachment *> *attachments;
+@property (nonatomic, readonly) NSDictionary<NSString *, NSString *> *attachments;
+
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
+
+/**
+ Designated initializer.
+
+ @param deviceIdentifier Zone's source.
+ @param tag Zone's tag name.
+ @param attachments Dicitionary of attachments.
+ @return Initialized object.
+ */
+- (instancetype)initWithDeviceIdentifier:(NSString *)deviceIdentifier
+                                     tag:(NSString *)tag
+                             attachments:(NSDictionary<NSString *, NSString *> *)attachments NS_DESIGNATED_INITIALIZER;
 
 @end
 

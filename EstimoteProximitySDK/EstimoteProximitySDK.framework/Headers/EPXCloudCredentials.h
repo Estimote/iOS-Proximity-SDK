@@ -13,22 +13,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 /**
  Estimote Cloud credentials encapsulated in a value object. To acquire App ID & App Token go to
  https://cloud.estimote.com/#/apps.
  */
+NS_SWIFT_NAME(CloudCredentials)
 @interface EPXCloudCredentials : NSObject
 
 /**
  App ID generated in Estimote Cloud.
  */
-@property (nonatomic, strong, readonly) NSString *appID;
+@property(nonatomic, strong, readonly) NSString *appID;
 
 /**
  App Token generated in Estimote Cloud.
  */
-@property (nonatomic, strong, readonly) NSString *appToken;
+@property(nonatomic, strong, readonly) NSString *appToken;
 
 /**
  Init is disabled for this class.
@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  New is disabled for this class.
  */
-+ (instancetype)new NS_UNAVAILABLE;
++ (instancetype) new NS_UNAVAILABLE;
 
 /**
  Designated initializer.

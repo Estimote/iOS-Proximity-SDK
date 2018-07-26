@@ -12,7 +12,6 @@
 #import <Foundation/Foundation.h>
 
 @class EPXProximityZone;
-@class EPXDeviceAttachment;
 
 NS_ASSUME_NONNULL_BEGIN
 

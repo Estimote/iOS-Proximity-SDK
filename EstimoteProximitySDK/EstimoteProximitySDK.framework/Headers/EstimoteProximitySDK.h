@@ -24,5 +24,4 @@ FOUNDATION_EXPORT const unsigned char EstimoteProximitySDKVersionString[];
 #import "EPXProximityZone.h"
 #import "EPXProximityRange.h"
 #import "EPXCloudCredentials.h"
-#import "EPXDeviceAttachment.h"
 #import "EPXProximityZoneContext.h"

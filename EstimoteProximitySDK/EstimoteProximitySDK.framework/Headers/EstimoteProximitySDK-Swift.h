@@ -164,11 +164,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import CoreLocation;
-@import ObjectiveC;
 @import Foundation;
 #endif
-
-#import <EstimoteProximitySDK/EstimoteProximitySDK.h>
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -186,20 +183,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-
-@class EPXDeviceAttachment;
-
-SWIFT_CLASS("_TtC20EstimoteProximitySDK28ProximityZoneContextInternal")
-@interface ProximityZoneContextInternal : NSObject <EPXProximityZoneContext>
-@property (nonatomic, copy) NSString * _Nonnull deviceIdentifier;
-@property (nonatomic, copy) NSString * _Nonnull tag;
-@property (nonatomic, copy) NSArray<EPXDeviceAttachment *> * _Nullable attachments;
-@property (nonatomic, readonly) NSUInteger hash;
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
 
 
 

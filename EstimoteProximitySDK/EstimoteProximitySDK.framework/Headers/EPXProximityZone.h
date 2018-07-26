@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  Note: at the moment, Proximity SDK supports monitoring only 100 devices per zone. If more devices have their attachments
  matching the key, value defined in the zone, the first 100 are monitored.
  */
+NS_SWIFT_NAME(ProximityZone)
 @interface EPXProximityZone : NSObject
 
 /**
@@ -40,19 +41,19 @@ NS_ASSUME_NONNULL_BEGIN
  Register block to be called when user enters proximity of Estimote devices with matching tag.
  Beacon identification is tag-based (see https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md for more info).
  */
-@property (nonatomic, copy, readwrite, nullable) void (^onEnterAction)(id<EPXProximityZoneContext> zoneContext);
+@property (nonatomic, copy, readwrite, nullable) void (^onEnter)(EPXProximityZoneContext * zoneContext);
 
 /**
  Block to be called when user exits proximity of Estimote devices with matching tag.
  Beacon identification is tag-based (see https://github.com/Estimote/iOS-SDK/blob/sdk_5/README.md for more info).
  */
-@property (nonatomic, copy, readwrite, nullable) void (^onExitAction)(id<EPXProximityZoneContext> zoneContext);
+@property (nonatomic, copy, readwrite, nullable) void (^onExit)(EPXProximityZoneContext * zoneContext);
 
 /**
  Block to be called each time a new beacon is detected in user's range and each time a beacon disappears
  from user's range.
  */
-@property (nonatomic, copy, readwrite, nullable) void (^onChangeAction)(NSSet<id<EPXProximityZoneContext>> *zoneContexts);
+@property (nonatomic, copy, readwrite, nullable) void (^onContextChange)(NSSet<EPXProximityZoneContext *> *zoneContexts);
 
 /**
  Init is unavailable.
@@ -66,10 +67,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Designated initilizer.
 
- @param range Range where the action should be reported.
  @param tag Tag name assigned to the zone.
+ @param range Range where the action should be reported.
  */
-- (instancetype)initWithRange:(EPXProximityRange *)range tag:(NSString *)tag NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithTag:(NSString *)tag range:(EPXProximityRange *)range NS_DESIGNATED_INITIALIZER;
 
 @end
 

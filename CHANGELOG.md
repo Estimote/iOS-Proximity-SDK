@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2018-07-26
+
+### Added:
+- Enforcing Core Location Services permissions — in order to report enter/exit events, your apps need either WhenInUse (to work when the app is active) or Always (to work in background as well) permission. 
+- Proximity SDK now supports telemetry reporting to Estimote Cloud.
+
+### Changed:
+- Errors related to the SDK initialization, zone observation, and Location Services are more descriptive.
+- `EPXProximityZoneContext` is not a protocol anymore, but a class (so you can use it nicely within your Swift apps).
+- Swift classes have no `EPX` prefixes.
+- Parameters and naming in `ProximityZone`'s `init` and event callbacks now follows a clearer convention, and is consistent with the Android version.
+
+### Removed:
+- `EPXDeviceAttachment` class.
+- DeskObservers sample apps - from now on please use [app templates](https://cloud.estimote.com/#/apps/add) as a reference instead.
 
 ## [0.14.0] - 2018-06-19
 >**Warning: Breaking changes - new, tag based API!**

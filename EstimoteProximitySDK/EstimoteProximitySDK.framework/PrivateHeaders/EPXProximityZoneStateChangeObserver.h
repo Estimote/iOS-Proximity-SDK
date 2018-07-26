@@ -13,7 +13,7 @@
 
 @class EPXProximityZone;
 @class EPXProximityZoneEngine;
-@protocol EPXProximityZoneContext;
+@class EPXProximityZoneContext;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,8 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, readonly) EPXProximityZone *proximityZone;
 
-- (void)insertZoneContext:(id<EPXProximityZoneContext>)context;
-- (void)removeZoneContext:(id<EPXProximityZoneContext>)context;
+- (void)insertZoneContext:(EPXProximityZoneContext *)context;
+- (void)removeZoneContext:(EPXProximityZoneContext *)context;
 
 @end
 
@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Set of device attachments that are currently inside the zone.
  */
-@property (nonatomic, strong, readonly) NSSet<id<EPXProximityZoneContext>> *zoneContextsInside;
+@property (nonatomic, strong, readonly) NSSet<EPXProximityZoneContext *> *zoneContextsInside;
 
 /**
  Init is unavailable.
@@ -74,7 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param context Attachment to be inserted.
  */
-- (void)insertZoneContextAndCallHandlerIfNeeded:(id<EPXProximityZoneContext>)context;
+- (void)insertZoneContextAndCallHandlerIfNeeded:(EPXProximityZoneContext *)context;
 
 /**
  Check whether provided zone's context matches the zone, removes it from `zoneContextsInside` set and calls `proximityZone`'s callbacks if necessary.
@@ -82,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param context Attachment to be removed.
  */
-- (void)removeZoneContextAndCallHandlerIfNeeded:(id<EPXProximityZoneContext>)context;
+- (void)removeZoneContextAndCallHandlerIfNeeded:(EPXProximityZoneContext *)context;
 
 @end
 
