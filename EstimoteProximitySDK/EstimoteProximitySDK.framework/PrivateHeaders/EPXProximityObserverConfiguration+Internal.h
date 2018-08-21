@@ -15,6 +15,5 @@
 
 @property (nonatomic, nullable) NSURL *sensorsDataFlushDirectoryURL;
 @property (nonatomic, nullable) NSURL *sensorsDataReplayFileURL;
-@property (nonatomic) BOOL shouldRequestCLAuthorization;
 
 @end

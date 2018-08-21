@@ -90,9 +90,6 @@ NS_SWIFT_NAME(ProximityObserver)
 
  Subsequent calls of this method cause overwriting previously observed zones.
 
- Note: at the moment, Proximity SDK supports monitoring only 100 devices per zone. If more devices have their attachments
- matching the key, value defined in the zone, the first 100 are monitored.
-
  @param zones Zones to be observed.
  */
 - (void)startObservingZones:(NSArray<EPXProximityZone *> *)zones;
