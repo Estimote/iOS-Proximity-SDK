@@ -166,10 +166,22 @@ Proximity SDK requires Location Services to work in the background, which means 
 To allow our app to run in the background when in range of beacons, **enable the Bluetooth Background Mode**:
 
 - Set _Uses Bluetooth LE accessories_ in your Xcode project settings -> _Capabilities_ -> _Background Modes_. It's ***required*** for Core Bluetooth to work in the background.
-
 ## Additional features
-### Caching data for limited internet connection use cases 
-Since the version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0) the ProximityObserver will persist necessary data locally, so that when there is no internet access, it may still be able to do proximity observation using that data. The only need is to call `ProximityObserver.startObserving([zone1,...])` instance at least once when the internet connection is available - it will fetch all the necessary data from the Estimote Cloud, and will store them locally for the later use.
+
+### Caching data for projects with limited internet connectivity.
+Starting with version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0), ProximityObserver can store the data necessary for triggering events locally. This allows for performing the typical proximity observation when there is no internet access later on. To enable this, you only need is to call `ProximityObserver.startObserving([zone1,...])` instance at least once when the internet connection is available - it will then fetch all the necessary data from the Estimote Cloud.
+
+### Scanning for Estimote Telemetry
+
+>Use case: Getting sensors data from your Estimote beacons.
+
+Starting with version [1.1.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v1.1.0) `ProximityObserverConfiguration` has exposed properties, one of which allows for reporting telemetry data to Estimote Cloud.
+
+You can easily scan for raw Estimote Telemetry packets that contain your beacons' sensor data. Telemetry is broadcasted in two separate sub-packets, called _frame A_ and _frame B_. Proximity SDK allows you to scan for the whole merged data at once (containing _frame A_ and _B_ data, and also the full device identifier). Reporting telemetry is enabled by default, but if for any reason you would like to disable this feature, perform the following to stop telemetry reporting:
+
+```swift
+let proximityConfiguration = ProximityObserverConfiguration.custom(with: .info, requestsCLAuthorization: true, telemetryReportingEnabled: false)
+```
 
 ## Example apps
 
