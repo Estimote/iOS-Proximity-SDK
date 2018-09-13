@@ -14,7 +14,7 @@
     <a title="EPXProximityZone Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">EstimoteProximitySDK Docs</a> (75% documented)</p>
+        <p><a href="../index.html">EstimoteProximitySDK Docs</a> (70% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -34,9 +34,6 @@
                 <a href="../Classes/EPXCloudCredentials.html">EPXCloudCredentials</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/EPXDeviceAttachment.html">EPXDeviceAttachment</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/EPXProximityObserver.html">EPXProximityObserver</a>
               </li>
               <li class="nav-group-task">
@@ -47,6 +44,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/EPXProximityZone.html">EPXProximityZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EPXProximityZoneContext.html">EPXProximityZoneContext</a>
               </li>
             </ul>
           </li>
@@ -65,21 +65,13 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Enums.html">Enums</a>
+            <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Enums/EPXLogLevel.html">EPXLogLevel</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/EPXProximityObserverError.html">EPXProximityObserverError</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Protocols.html">Protocols</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Protocols/EPXProximityZoneContext.html">EPXProximityZoneContext</a>
               </li>
             </ul>
           </li>
@@ -91,16 +83,14 @@
             <h1>EPXProximityZone</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">EPXProximityZone</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">EPXProximityZone</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Represents a logical zone. Is represented by range from a beacon and attachment rule (attachment key + attachment value).
-Can be spanned by one or more beacons. Beacon identification is attachment-based
+            <p>Represents a logical zone. Is represented by range from a beacon and its tag.
+Can be spanned by one or more beacons. Beacon identification is tag-based
 (see <a href="https://github.com/Estimote/iOS-Proximity-SDK/blob/master/README.md">https://github.com/Estimote/iOS-Proximity-SDK/blob/master/README.md</a> for more info).</p>
-
-<p>Note: at the moment, Proximity SDK supports monitoring only 100 devices per zone. If more devices have their attachments
-matching the key, value defined in the zone, the first 100 are monitored.</p>
 
           </section>
           <section class="section task-group-section">
@@ -126,12 +116,12 @@ matching the key, value defined in the zone, the first 100 are monitored.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">range</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">range</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">range</span><span class="p">:</span> <span class="kt"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">ProximityRange</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -158,12 +148,12 @@ matching the key, value defined in the zone, the first 100 are monitored.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">tag</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">tag</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -173,9 +163,9 @@ matching the key, value defined in the zone, the first 100 are monitored.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXProximityZone(py)onEnterAction"></a>
-                    <a name="//apple_ref/objc/Property/onEnterAction" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onEnterAction">onEnterAction</a>
+                    <a name="/c:objc(cs)EPXProximityZone(py)onEnter"></a>
+                    <a name="//apple_ref/objc/Property/onEnter" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onEnter">onEnter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -191,13 +181,13 @@ Beacon identification is tag-based (see <a href="https://github.com/Estimote/iOS
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
-    <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/EPXProximityZoneContext.html">EPXProximityZoneContext</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onEnterAction</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
+    <span class="p">(</span><span class="n"><a href="../Classes/EPXProximityZoneContext.html">EPXProximityZoneContext</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onEnter</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">onEnterAction</span><span class="p">:</span> <span class="p">((</span><span class="kt">ProximityZoneContext</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onEnter</span><span class="p">:</span> <span class="p">((</span><span class="kt">ProximityZoneContext</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -207,9 +197,9 @@ Beacon identification is tag-based (see <a href="https://github.com/Estimote/iOS
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXProximityZone(py)onExitAction"></a>
-                    <a name="//apple_ref/objc/Property/onExitAction" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onExitAction">onExitAction</a>
+                    <a name="/c:objc(cs)EPXProximityZone(py)onExit"></a>
+                    <a name="//apple_ref/objc/Property/onExit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onExit">onExit</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -225,13 +215,13 @@ Beacon identification is tag-based (see <a href="https://github.com/Estimote/iOS
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
-    <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/EPXProximityZoneContext.html">EPXProximityZoneContext</a></span><span class="o">&gt;</span> <span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onExitAction</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
+    <span class="p">(</span><span class="n"><a href="../Classes/EPXProximityZoneContext.html">EPXProximityZoneContext</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onExit</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">onExitAction</span><span class="p">:</span> <span class="p">((</span><span class="kt">ProximityZoneContext</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onExit</span><span class="p">:</span> <span class="p">((</span><span class="kt">ProximityZoneContext</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -241,9 +231,9 @@ Beacon identification is tag-based (see <a href="https://github.com/Estimote/iOS
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXProximityZone(py)onChangeAction"></a>
-                    <a name="//apple_ref/objc/Property/onChangeAction" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onChangeAction">onChangeAction</a>
+                    <a name="/c:objc(cs)EPXProximityZone(py)onContextChange"></a>
+                    <a name="//apple_ref/objc/Property/onContextChange" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(py)onContextChange">onContextChange</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -259,13 +249,13 @@ from user&rsquo;s range.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
-    <span class="p">(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/EPXProximityZoneContext.html">EPXProximityZoneContext</a></span><span class="o">&gt;&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onChangeAction</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)</span>
+    <span class="p">(</span><span class="n">NSSet</span><span class="o">&lt;</span><span class="n"><a href="../Classes/EPXProximityZoneContext.html">EPXProximityZoneContext</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span> <span class="n">onContextChange</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">onChangeAction</span><span class="p">:</span> <span class="p">((</span><span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">onContextChange</span><span class="p">:</span> <span class="p">((</span><span class="kt">Set</span><span class="o">&lt;</span><span class="kt">ProximityZoneContext</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -292,7 +282,7 @@ from user&rsquo;s range.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -319,7 +309,7 @@ from user&rsquo;s range.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span> <span class="n">new</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span> <span class="n">new</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -329,9 +319,9 @@ from user&rsquo;s range.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXProximityZone(im)initWithRange:tag:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithRange:tag:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXProximityZone(im)initWithRange:tag:">-initWithRange:tag:</a>
+                    <a name="/c:objc(cs)EPXProximityZone(im)initWithTag:range:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithTag:range:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZone(im)initWithTag:range:">-initWithTag:range:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -346,13 +336,13 @@ from user&rsquo;s range.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithRange</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">range</span>
-                                  <span class="nf">tag</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">tag</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithTag</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">tag</span>
+                              <span class="nf">range</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">range</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="nv">range</span><span class="p">:</span> <span class="kt"><a href="../Classes/EPXProximityRange.html">EPXProximityRange</a></span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">ProximityRange</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -363,26 +353,24 @@ from user&rsquo;s range.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>range</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Range where the action should be reported.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
                                 <em>tag</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
                                   <p>Tag name assigned to the zone.</p>
-
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Range where the action should be reported.</p>
                                 </div>
                               </td>
                             </tr>
@@ -397,8 +385,8 @@ from user&rsquo;s range.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Estimote</a>. All rights reserved. (Last updated: 2018-06-19)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Estimote</a>. All rights reserved. (Last updated: 2018-09-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EPXCloudCredentials Class Reference</title>
+    <title>EPXProximityZoneContext Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/EPXCloudCredentials" class="dashAnchor"></a>
-    <a title="EPXCloudCredentials Class Reference"></a>
+    <a name="//apple_ref/objc/Class/EPXProximityZoneContext" class="dashAnchor"></a>
+    <a title="EPXProximityZoneContext Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">EstimoteProximitySDK Docs</a> (70% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">EstimoteProximitySDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        EPXCloudCredentials Class Reference
+        EPXProximityZoneContext Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -80,16 +80,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>EPXCloudCredentials</h1>
+            <h1>EPXProximityZoneContext</h1>
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight objective_c"><code>
-<span class="k">@interface</span> <span class="nc">EPXCloudCredentials</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+<span class="k">@interface</span> <span class="nc">EPXProximityZoneContext</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Estimote Cloud credentials encapsulated in a value object. To acquire App ID &amp; App Token go to
-<a href="https://cloud.estimote.com/#/apps">https://cloud.estimote.com/#/apps</a>.</p>
+            <p>Interface providing all contextual data about a Proximity Zone.</p>
 
           </section>
           <section class="section task-group-section">
@@ -98,9 +97,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXCloudCredentials(py)appID"></a>
-                    <a name="//apple_ref/objc/Property/appID" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXCloudCredentials(py)appID">appID</a>
+                    <a name="/c:objc(cs)EPXProximityZoneContext(py)deviceIdentifier"></a>
+                    <a name="//apple_ref/objc/Property/deviceIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZoneContext(py)deviceIdentifier">deviceIdentifier</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -108,19 +107,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>App ID generated in Estimote Cloud.</p>
+                        <p>Identifier of a device that is the zone&rsquo;s source.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">appID</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">deviceIdentifier</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">appID</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deviceIdentifier</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -130,9 +129,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXCloudCredentials(py)appToken"></a>
-                    <a name="//apple_ref/objc/Property/appToken" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXCloudCredentials(py)appToken">appToken</a>
+                    <a name="/c:objc(cs)EPXProximityZoneContext(py)tag"></a>
+                    <a name="//apple_ref/objc/Property/tag" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZoneContext(py)tag">tag</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -140,19 +139,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>App Token generated in Estimote Cloud.</p>
+                        <p>Tag assigned in Cloud to that zone&rsquo;s source.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">appToken</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">tag</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">appToken</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -162,9 +161,42 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXCloudCredentials(im)init"></a>
+                    <a name="/c:objc(cs)EPXProximityZoneContext(py)attachments"></a>
+                    <a name="//apple_ref/objc/Property/attachments" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZoneContext(py)attachments">attachments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary of attachments assigned in Cloud to that zone&rsquo;s source.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">attachments</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">attachments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EPXProximityZoneContext(im)init"></a>
                     <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXCloudCredentials(im)init">-init</a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZoneContext(im)init">-init</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -172,14 +204,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Init is disabled for this class.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -189,9 +221,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXCloudCredentials(cm)new"></a>
+                    <a name="/c:objc(cs)EPXProximityZoneContext(cm)new"></a>
                     <a name="//apple_ref/objc/Method/+new" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXCloudCredentials(cm)new">+new</a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZoneContext(cm)new">+new</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -199,14 +231,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>New is disabled for this class.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span> <span class="n">new</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">new</span> <span class="n">NS_UNAVAILABLE</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -216,9 +248,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)EPXCloudCredentials(im)initWithAppID:appToken:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithAppID:appToken:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)EPXCloudCredentials(im)initWithAppID:appToken:">-initWithAppID:appToken:</a>
+                    <a name="/c:objc(cs)EPXProximityZoneContext(im)initWithDeviceIdentifier:tag:attachments:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDeviceIdentifier:tag:attachments:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EPXProximityZoneContext(im)initWithDeviceIdentifier:tag:attachments:">-initWithDeviceIdentifier:tag:attachments:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -233,13 +265,16 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithAppID</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appID</span>
-                             <span class="nf">appToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appToken</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span>
+<span class="nf">initWithDeviceIdentifier</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">deviceIdentifier</span>
+                     <span class="nf">tag</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">tag</span>
+             <span class="nf">attachments</span><span class="p">:</span>
+                 <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">attachments</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">appID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">appToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">deviceIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">attachments</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -250,29 +285,45 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>appID</em>
+                                <em>deviceIdentifier</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>App ID generated in Estimote Cloud.</p>
+                                  <p>Zone&rsquo;s source.</p>
                                 </div>
                               </td>
                             </tr>
                             <tr>
                               <td>
                                 <code>
-                                <em>appToken</em>
+                                <em>tag</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>App Token generated in Estimote Cloud.</p>
+                                  <p>Zone&rsquo;s tag name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attachments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dicitionary of attachments.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Initialized object.</p>
                       </div>
                     </section>
                   </div>
