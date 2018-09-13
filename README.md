@@ -194,7 +194,7 @@ App ID & App Token credentials are generated automatically.
 Demos require Estimote Beacons [configured with Estimote Monitoring](https://community.estimote.com/hc/en-us/articles/226144728-How-to-enable-Estimote-Monitoring)
 
 ## Documentation
-[Here](https://github.com/Estimote/iOS-Proximity-SDK/tree/master/docs) you will find documentation.
+[Here](https://estimote.github.io/iOS-Proximity-SDK) you will find documentation.
 
 ## Your feedback and questions
 At Estimote we're massive believers in feedback! Here are some common ways to share your thoughts with us:
