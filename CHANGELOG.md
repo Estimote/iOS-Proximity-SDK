@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2018-09-19
+
+### Added:
+- Support for Swift 4.2 and the new build system in Xcode 10.
+
+### Changed:
+- The SDK doesn't support the devices with 32-bit arm7vs architecture (older than iPhone 5S).
+
 ## [1.1.0] - 2018-08-20
 
 ### Added:
@@ -13,7 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.0] - 2018-07-26
 
 ### Added:
-- Enforcing Core Location Services permissions — in order to report enter/exit events, your apps need either `WhenInUse` (to work when the app is active) or `Always` (to work in background as well) permission. 
+- Enforcing Core Location Services permissions — in order to report enter/exit events, your apps need either `WhenInUse` (to work when the app is active) or `Always` (to work in background as well) permission.
 - Proximity SDK now supports telemetry reporting to Estimote Cloud.
 
 ### Changed:
@@ -91,7 +99,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Renamed `EPXProximityDeviceAttachment` to `EPXDeviceAttachment`.
 - `EPXProximityZone`'s `attachmentValue` is now `nonnull`.
 
-### Added 
+### Added
 - Added `EPXProximityObserverConfiguration` - it allows configuring Proximity Observer. At the moment, it only contains log level, but will be extended in the future.
 
 ### Removed
