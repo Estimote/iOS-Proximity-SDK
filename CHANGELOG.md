@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Support for Swift 4.2 and the new build system in Xcode 10.
 
 ### Changed:
-- The SDK doesn't support the devices with 32-bit arm7vs architecture (older than iPhone 5S).
+- The SDK drops support for the arm7vs architecture.
 
 ## [1.1.0] - 2018-08-20
 
