@@ -117,7 +117,7 @@ Then, configure proximity discovery with `ProximityObserver`. For more info on t
 ```swift
 // Create observer instance
 self.proximityObserver = EPXProximityObserver(credentials: credentials, onError: { error in
-print("Ooops! \(error)")
+print("Oops! \(error)")
 })
 
 // Define zones
@@ -145,7 +145,7 @@ self.observer.startObserving([blueberryZone])
 While zone identification is based on tags, attachments are a way to add additional content to a beacon and a zone it defines. Think of it as a custom backend where you can assign any additional data to a particular beacon.
 All attachments assigned to a beacon will be available in `EPXproximityZoneContext` objects returned in action's callback. See [EPXProximityZone](https://github.com/Estimote/iOS-Proximity-SDK-Source/blob/feature/tags_readme/EstimoteProximitySDK/EstimoteProximitySDK/PublicClasses/EPXProximityRange.h) for more details.
 
-To conifgure the attachments:
+To configure the attachments:
 1. Go to https://cloud.estimote.com/#/
 1. Click on the beacon you want to configure
 1. Click _Settings_ button
