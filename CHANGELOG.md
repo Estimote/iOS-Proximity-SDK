@@ -5,10 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2019-03-27
+
+### Fixed:
+- Fixed missing i386 and x86_64 .swiftmodule. Projects which include EstimoteProximitySDK should now build in a simulator.
+
 ## [1.3.0] - 2019-03-27
 
 ### Changed:
 - Updated to Swift 5. If you're still on an earlier version of Swift, use 1.2.0.
+
+## [1.2.1] - 2018-12-27
+
+### Changed:
+- Dependecy on [Estimote Bluetooth Scanning library](https://github.com/Estimote/iOS-Bluetooth-Scanning) to match its version `1.0.0-alpha`.
 
 ## [1.2.0] - 2018-09-19
 
