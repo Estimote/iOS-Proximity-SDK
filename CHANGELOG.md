@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2019-03-27
+
+### Changed:
+- Updated to Swift 5. If you're still on an earlier version of Swift, use 1.2.0.
+
+## [1.2.0] - 2018-09-19
+
+### Added:
+- Support for Swift 4.2 and the new build system in Xcode 10.
+
+### Changed:
+- The SDK drops support for the arm7vs architecture.
+
 ## [1.2.1] - 2018-12-27
 
 ### Changed:
@@ -89,7 +102,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.11.0] - 2018-03-01
 
 ### Added
-- Estimote Secure Monitoring support.   
+- Estimote Secure Monitoring support.
 
 ### Changed
 - Lack attachments assigned to devices does not stop observing proximity zones.
