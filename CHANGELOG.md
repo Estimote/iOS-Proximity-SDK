@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] 2019-04-25
+### Changed:
+- Now `ProximityObserver` will return error (and thus will fail) if *all tags* have no devices assigned. If any tag will have at least one device assigned, then monitoring will be started.
+
 ## [1.3.1] - 2019-03-27
 
 ### Fixed:
@@ -14,19 +18,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed:
 - Updated to Swift 5. If you're still on an earlier version of Swift, use 1.2.0.
-
-## [1.2.1] - 2018-12-27
-
-### Changed:
-- Dependecy on [Estimote Bluetooth Scanning library](https://github.com/Estimote/iOS-Bluetooth-Scanning) to match its version `1.0.0-alpha`.
-
-## [1.2.0] - 2018-09-19
-
-### Added:
-- Support for Swift 4.2 and the new build system in Xcode 10.
-
-### Changed:
-- The SDK drops support for the arm7vs architecture.
 
 ## [1.2.1] - 2018-12-27
 
@@ -167,3 +158,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `EPXProximityObserver`, `EPXProximityZone`, `EPXProximityRange`, `EPXProximityDeviceAttachment` classes for beacon proximity detection & beacon identification.
 - Estimote Monitoring algorithm with motion detection for reliable beacon proximity detection experience.
 - Built-in visit analytics sending. The collected data can be seen in [Estimote Cloud](https://cloud.estimote.com/#/analytics).
+
