@@ -91,7 +91,7 @@ The library is compatible with both Objective–C and Swift. The public-facing c
 - An Estimote Cloud account.
 
 ### Setting up tags
-To conifgure the tags:
+To configure the tags:
 1. Go to https://cloud.estimote.com/#/
 1. Click on the beacon you want to configure
 1. Click _Edit Settings_ button
