@@ -37,7 +37,7 @@ NS_SWIFT_NAME(ProximityObserverConfiguration)
 @interface EPXProximityObserverConfiguration : NSObject
 
 /**
- Creates a default Proximity Observer configuration object.
+ Creates a default Proximity Observer configuration object, which has `EPXLogLevelWarning` logs level, and enabled both requesting Core Location authorization and telemetry reporting.
  */
 @property(nonatomic, strong, readonly, class) EPXProximityObserverConfiguration *defaultConfiguration;
 
