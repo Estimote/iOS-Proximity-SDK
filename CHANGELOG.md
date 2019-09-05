@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.5.0-beta1] 2019-09-05
+
+This version is marked as _beta_ because it was built with Xcode 11 beta 7. We don't anticipate any stability problems, but decided to wait with the final 1.5.0 release until Xcode 11 also releases as stable.
+
+### Changed:
+- Updated to Swift 5.1 (Xcode 11). If you're still on an earlier version of Swift or Xcode, use 1.4.1.
+- We now include .swiftinterface files (new in Swift 5.1) with our framework, which gives it [module stability](https://swift.org/blog/abi-stability-and-more/#module-stability). Together with the ABI stability introduced in Swift 5.0, this means that you should now be able to use Estimote Proximity SDK >= 1.5.0 with Swift > 5.1 without us having to update the binary.
+
 ## [1.4.1] 2019-07-01
 
 ### Fixed:
