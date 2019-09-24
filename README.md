@@ -173,7 +173,7 @@ To allow our app to run in the background when in range of beacons, **enable the
 ## Additional features
 
 ### Caching data for projects with limited internet connectivity.
-Starting with version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0), ProximityObserver can store the data necessary for triggering events locally. This allows for performing the typical proximity observation when there is no internet access later on. To enable this, you only need is to call `ProximityObserver.startObserving([zone1,...])` instance at least once when the internet connection is available - it will then fetch all the necessary data from the Estimote Cloud.
+Starting with version [0.13.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v0.13.0), ProximityObserver can store the data necessary for triggering events locally. This allows for performing the typical proximity observation when there is no internet access later on. To enable this, you only need to call `ProximityObserver.startObserving([zone1,...])` instance at least once when the internet connection is available - it will then fetch all the necessary data from the Estimote Cloud.
 
 ### Scanning for Estimote Telemetry
 
