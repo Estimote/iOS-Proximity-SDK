@@ -116,13 +116,11 @@ let credentials = CloudCredentials(appID: "your-app-id", appToken: "your-app-tok
 Then, configure proximity discovery with `ProximityObserver`. For more info on tags, see [this section](#tag-based-identification) or [documentation](#documentation).
 ```swift
 // Create observer instance
-self.proximityObserver = EPXProximityObserver(credentials: credentials, onError: { error in
-print("Oops! \(error)")
+self.proximityObserver = ProximityObserver(credentials: credentials, onError: { error in
+    print("Oops! \(error)")
 })
-
 // Define zones
-let blueberryZone = ProximityZone(range: ProximityRange.near,
-                                    tag: "blueberry")
+let blueberryZone = ProximityZone(tag: "blueberry", range: ProximityRange.near)
 blueberryZone.onEnter = { zoneContext in
     print("Entered near range of tag 'blueberry'. Attachments payload: \(zoneContext.attachments)")
 }
@@ -137,7 +135,7 @@ blueberryZone.onContextChange = { contexts in
 // ... etc. You can define as many zones as you need.
 
 // Start proximity observation
-self.observer.startObserving([blueberryZone])
+self.proximityObserver.startObserving([blueberryZone])
 ```
 
 
