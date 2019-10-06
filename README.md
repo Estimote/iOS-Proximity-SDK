@@ -19,7 +19,7 @@ Other Proximity SDK highlights include:
     - [Setting up tags](#setting-up-tags)
     - [Inside your app](#inside-your-app)
 - [(Optional) Adding attachments to your beacons](#optional-adding-attachments-to-your-beacons)
-- [Location permissions and Background support](#location-permissions-and-background-support)
+- [Location and Bluetooth permissions, Background support](#location-and-bluetooth-permissions-background-support)
 - [Additional features](#additional-features)
 - [Example apps](#example-apps)
 - [Documentation](#documentation)
@@ -159,11 +159,15 @@ To configure the attachments:
 <i>Assigning beacon attachments</i>
 </p>
 
-## Location permissions and Background support 
+## Location and Bluetooth permissions, Background support
 
 Proximity SDK requires Location Services to work in the background, which means you need to ask users to allow the app to access their location. To do that, **set up the Location Services usage description**:
 
 - Add a value for _Privacy - Location Always Usage Description_ key in your app's Info.plist file. This message will be shown to the user when the app calls `ProximityObserver.startObserving(...)`. It's ***required*** for Core Location to work.
+
+Proximity SDK uses Bluetooth, which means you need to ask users to allow the app to access bluetooth. To do that, **set up Bluetooth usage description**:
+
+- Add a value for _Privacy - Bluetooth Always Usage Description_ key in your app's Info.plist file.
 
 To allow our app to run in the background when in range of beacons, **enable the Bluetooth Background Mode**:
 
