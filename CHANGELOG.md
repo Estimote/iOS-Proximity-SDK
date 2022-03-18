@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] 2022-03-17
+### Fixed:
+- Rebuilt with newest Xcode to support Swift 5.6
+
 ## [1.7.0] 2020-04-14
 ### Changed:
 -  `ProximityObserver` will not return error if devices assigned to provided tags don't have attachments (previously it was treated as an error).
