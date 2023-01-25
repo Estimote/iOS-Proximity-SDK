@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.8.0] 2023-01-25
+### Changee
+- Dependancy updated Dependecy on [Estimote Bluetooth Scanning library](https://github.com/Estimote/iOS-Bluetooth-Scanning/releases/tag/v1.0.9) to match its version `1.0.8`.
+- updated to xcframeework
+
 ## [1.7.0] 2022-03-17
 ### Fixed:
 - Rebuilt with newest Xcode to support Swift 5.6

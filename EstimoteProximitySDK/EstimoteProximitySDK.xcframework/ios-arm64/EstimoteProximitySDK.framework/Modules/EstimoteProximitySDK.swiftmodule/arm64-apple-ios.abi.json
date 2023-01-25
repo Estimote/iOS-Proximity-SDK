@@ -1,0 +1,1925 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryA",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryA",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryB",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryB",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoLocationConnectivity",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoLocationConnectivity",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIDevice",
+        "printedName": "UIKit.UIDevice",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryA",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryA",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryB",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoEstimoteTelemetryB",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoLocationConnectivity",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoLocationConnectivity",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIApplication",
+        "printedName": "UIKit.UIApplication",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIDevice",
+        "printedName": "UIKit.UIDevice",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation.CLLocationManager",
+        "printedName": "CoreLocation.CLLocationManager",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIDevice",
+        "printedName": "UIKit.UIDevice",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit.UIDevice",
+        "printedName": "UIKit.UIDevice",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning",
+        "printedName": "EstimoteBluetoothScanning",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfo",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfo",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoEstimoteEncrypted",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoEstimoteEncrypted",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "EstimoteBluetoothScanning.EBSScanInfoEstimoteLocation",
+        "printedName": "EstimoteBluetoothScanning.EBSScanInfoEstimoteLocation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation.CLLocationManager",
+        "printedName": "CoreLocation.CLLocationManager",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "EstimoteProximitySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CLLocationManager",
+        "printedName": "CLLocationManager",
+        "declKind": "Class",
+        "usr": "c:objc(cs)CLLocationManager",
+        "moduleName": "CoreLocation",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "CLLocationManager",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSessionDataTask",
+        "printedName": "URLSessionDataTask",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSessionDataTask",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSessionDataTask",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSURLSessionTask",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Foundation.URLSessionTask",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MovingAveragesStepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1368,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MovingAveragesStepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1440,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MovingAveragesStepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1482,
+      "length": 6,
+      "value": "0.0033"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MovingAveragesStepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1548,
+      "length": 4,
+      "value": "0.42"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MovingAveragesStepDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1603,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/DistanceThresholdsCalculator\/MonitoringDistanceThresholdCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 626,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/DistanceThresholdsCalculator\/MonitoringDistanceThresholdCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 688,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/DistanceThresholdsCalculator\/MonitoringDistanceThresholdCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 761,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/DistanceThresholdsCalculator\/MonitoringDistanceThresholdCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 829,
+      "length": 3,
+      "value": "1.4"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/DistanceThresholdsCalculator\/MonitoringDistanceThresholdCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 905,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/DistanceThresholdsCalculator\/MonitoringDistanceThresholdCalculator.swift",
+      "kind": "FloatLiteral",
+      "offset": 976,
+      "length": 3,
+      "value": "2.6"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/AttachmentsFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2925,
+      "length": 13,
+      "value": "\"total_count\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/AttachmentsFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2925,
+      "length": 13,
+      "value": "\"total_count\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/AttachmentsFetcher.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3471,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/AttachmentsFetcher.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4452,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MotionStateDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1154,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MotionStateDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1227,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MotionStateDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1282,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MotionStateDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 1353,
+      "length": 3,
+      "value": "5.5"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MotionDetection\/MotionStateDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1593,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityContext\/DeviceTags\/TagsMappingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1466,
+      "length": 61,
+      "value": "\"com.estimote.proximitySDK.tagsMappingProvider.fetchingQueue\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityContext\/DeviceTags\/TagsMappingProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 1855,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityContext\/DeviceTags\/TagsMappingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 559,
+      "length": 19,
+      "value": "\"EstimoteProximitySDK.TagsMappingProvider\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 101,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127,
+      "length": 2,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 157,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 185,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 3,
+      "value": "402"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 241,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 101,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 157,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 185,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 3,
+      "value": "402"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 241,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 101,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 157,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 185,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 3,
+      "value": "402"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 241,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 265,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/RequestError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 300,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/Boniface\/ScanInfoSecurePacket.swift",
+      "kind": "StringLiteral",
+      "offset": 601,
+      "length": 6,
+      "value": "\"FE9A\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/Boniface\/ScanInfoSecurePacket.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 22,
+      "value": "\"EstimoteProximitySDK.ScanInfoEstimoteSecure\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/Boniface\/ScanInfoSecurePacket.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 22,
+      "value": "\"EstimoteProximitySDK.ScanInfoEstimoteSecure\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/ReplaySensorsDataSource.swift",
+      "kind": "Array",
+      "offset": 765,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/ReplaySensorsDataSource.swift",
+      "kind": "Array",
+      "offset": 857,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 13,
+      "value": "\"packet_type\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1287,
+      "length": 19,
+      "value": "\"packet_identifier\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1347,
+      "length": 19,
+      "value": "\"expected_distance\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1433,
+      "length": 13,
+      "value": "\"distinct_id\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 13,
+      "value": "\"packet_type\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1287,
+      "length": 19,
+      "value": "\"packet_identifier\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1347,
+      "length": 19,
+      "value": "\"expected_distance\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/CloudAnalyticsTrackEventsSender.swift",
+      "kind": "StringLiteral",
+      "offset": 1433,
+      "length": 13,
+      "value": "\"distinct_id\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 1292,
+      "length": 10,
+      "value": "\"location\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 1292,
+      "length": 10,
+      "value": "\"location\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 1931,
+      "length": 12,
+      "value": "\"frame_type\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 1983,
+      "length": 18,
+      "value": "\"protocol_version\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2039,
+      "length": 16,
+      "value": "\"measured_power\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2090,
+      "length": 13,
+      "value": "\"adv_channel\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2136,
+      "length": 11,
+      "value": "\"public_id\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 1931,
+      "length": 12,
+      "value": "\"frame_type\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 1983,
+      "length": 18,
+      "value": "\"protocol_version\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2039,
+      "length": 16,
+      "value": "\"measured_power\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2090,
+      "length": 13,
+      "value": "\"adv_channel\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Cloud\/Endpoints\/DecryptedFramesFetcher.swift",
+      "kind": "StringLiteral",
+      "offset": 2136,
+      "length": 11,
+      "value": "\"public_id\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityObserver\/ProximityObserverInternal.swift",
+      "kind": "FloatLiteral",
+      "offset": 709,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityObserver\/ProximityObserverInternal.swift",
+      "kind": "IntegerLiteral",
+      "offset": 765,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityObserver\/ProximityObserverInternal.swift",
+      "kind": "StringLiteral",
+      "offset": 582,
+      "length": 25,
+      "value": "\"EstimoteProximitySDK.ProximityObserverInternal\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1431,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1479,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1546,
+      "length": 4,
+      "value": "25.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1606,
+      "length": 5,
+      "value": "90.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1616,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1687,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1693,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1762,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1829,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1900,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/RSSIKalmanFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1906,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/CumulativeSignalPowerFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 870,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/TimeBasedCache.swift",
+      "kind": "Dictionary",
+      "offset": 1073,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/TimeBasedCache.swift",
+      "kind": "StringLiteral",
+      "offset": 1135,
+      "length": 39,
+      "value": "\"com.estimote.TimeBasedDictionaryCache\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/TimeBasedCache.swift",
+      "kind": "FloatLiteral",
+      "offset": 1799,
+      "length": 5,
+      "value": "300.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/TimeBasedCache.swift",
+      "kind": "FloatLiteral",
+      "offset": 1860,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/TimeBasedCache.swift",
+      "kind": "StringLiteral",
+      "offset": 844,
+      "length": 24,
+      "value": "\"EstimoteProximitySDK.TimeBasedDictionaryCache\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/Boniface\/DictionaryUUIDStringDateCache.swift",
+      "kind": "Dictionary",
+      "offset": 816,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1183,
+      "length": 15,
+      "value": "\"current_state\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1239,
+      "length": 24,
+      "value": "\"current_state_duration\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1305,
+      "length": 25,
+      "value": "\"previous_state_duration\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1183,
+      "length": 15,
+      "value": "\"current_state\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1239,
+      "length": 24,
+      "value": "\"current_state_duration\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1305,
+      "length": 25,
+      "value": "\"previous_state_duration\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2028,
+      "length": 16,
+      "value": "\"magnetic_field\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2071,
+      "length": 8,
+      "value": "\"motion\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 21,
+      "value": "\"ambient_light_level\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2190,
+      "length": 17,
+      "value": "\"battery_voltage\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2253,
+      "length": 12,
+      "value": "\"scanned_at\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2028,
+      "length": 16,
+      "value": "\"magnetic_field\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2071,
+      "length": 8,
+      "value": "\"motion\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 21,
+      "value": "\"ambient_light_level\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2190,
+      "length": 17,
+      "value": "\"battery_voltage\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2253,
+      "length": 12,
+      "value": "\"scanned_at\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MultiDeviceMonitorer.swift",
+      "kind": "FloatLiteral",
+      "offset": 1421,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/EstiMonitoring\/MultiDeviceMonitorer.swift",
+      "kind": "Dictionary",
+      "offset": 1610,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsJSONDataSink.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
+      "length": 25,
+      "value": "\"yyyy-MM-dd HH-mm-ss-SSS\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsJSONDataSink.swift",
+      "kind": "StringLiteral",
+      "offset": 701,
+      "length": 15,
+      "value": "\"com.estimote.\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/OnDeviceSensorsDataSource.swift",
+      "kind": "Array",
+      "offset": 2975,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/OnDeviceSensorsDataSource.swift",
+      "kind": "Array",
+      "offset": 3041,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "StringLiteral",
+      "offset": 609,
+      "length": 6,
+      "value": "\"FE9A\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1924,
+      "length": 9,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1935,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1946,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1924,
+      "length": 9,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1935,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1946,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1924,
+      "length": 9,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1935,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SensorsObserving\/SensorsPersistence\/SensorsModels.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1946,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityContext\/DeviceAttachments\/Persistence\/PersistentAttachmentsRespository.swift",
+      "kind": "StringLiteral",
+      "offset": 1137,
+      "length": 13,
+      "value": "\"attachments\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/SecureMonitoring\/Boniface\/EncryptedFramesRelayInternal.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 28,
+      "value": "\"EstimoteProximitySDK.EncryptedFramesRelayInternal\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryBatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 1493,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryBatcher.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1643,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryBatcher.swift",
+      "kind": "FloatLiteral",
+      "offset": 1768,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/TelemetryBatcher.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3476,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Telemetry\/ProximityTelemetryMiddleware.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1062,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityContext\/DeviceTags\/Persistence\/PersistentTagsRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1762,
+      "length": 6,
+      "value": "\"tags\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityObserver\/BackgroundSupportCLMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 968,
+      "length": 38,
+      "value": "\"E1F54E02-1E23-44E0-9C3D-512EB56ADEC9\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityObserver\/BackgroundSupportCLMonitor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2394,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityContext\/DeviceAttachments\/AttachmentsMappingProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1022,
+      "length": 72,
+      "value": "\"com.estimote.proximitySDK.attachmentsMappingProvider.synchronizerQueue\""
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/ProximityContext\/DeviceAttachments\/AttachmentsMappingProvider.swift",
+      "kind": "FloatLiteral",
+      "offset": 1345,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/MovingAverageFilter.swift",
+      "kind": "Array",
+      "offset": 907,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/MovingAverageFilter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1007,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/AlgorithmBlocks\/MovingAverageFilter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1044,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/djhayden\/estimote\/mobile\/iOS\/iOS-Proximity-SDK-Source\/EstimoteProximitySDK\/EstimoteProximitySDK\/Analytics\/CloudAnalyticsTrackEventsUploader.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 33,
+      "value": "\"EstimoteProximitySDK.CloudAnalyticsTrackEventsUploader\""
+    }
+  ]
+}
