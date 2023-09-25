@@ -62,6 +62,10 @@ Below there's a presentation of two zones:
 
 Starting with [version 1.2.0](https://github.com/Estimote/iOS-Proximity-SDK/releases/tag/v1.2.0) Proximity SDK supports Swift 4.2.
 
+### Swift Package Manager 
+
+Follow the article about [Adding Package Dependencies to Your App](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) using the following repository URL: `https://github.com/Estimote/iOS-Proximity-SDK`.
+
 ### CocoaPods 
 [CocoaPods](https://cocoapods.org/) is an easy way to add external libraries. To use it to fetch Proximity SDK:
 1. Add `pod 'EstimoteProximitySDK'` to your Podfile
